@@ -1,0 +1,92 @@
+:root{
+  --primary-color:#ff3333;
+  --hover-color:#000;
+  --btn-color :linear-gradient(90deg, rgba(198,44,116,1) 0%, rgba(89,39,110,1) 100%);
+  --hover-btn-color:linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+ 
+ 
+}
+$ont-nunito: 'Nunito Sans', sans-serif;
+ 
+$ont-poppins: 'Poppins', sans-serif;
+
+.speacial_products{
+ 
+ 
+    .special_item{ 
+
+  
+      padding: 0 7px;
+      .card{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         .card-img-top{
+          height: 200px;
+            width: 100%;
+            object-position: top;
+          object-fit: cover;
+          padding: 10px;
+ 
+
+      }
+
+      .card-body{
+        font-family: $ont-nunito;
+        text-transform: capitalize;
+       img{
+        height: 130px !important;
+        object-fit: cover;
+        object-position: top;
+       }
+
+       p{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 5px !important;
+      }
+    }
+      span{
+        font-size: 13px;
+ 
+        font-weight: 200;
+      }
+      }
+    }
+
+    .arrow {
+        font-size: 40px;
+        cursor: pointer;
+        background:var(--btn-color);
+    color: #fff;
+    font-weight: 600;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 0px;
+ 
+     
+        &:hover{
+          background:var(--hover-btn-color);
+        }
+    
+      }
+    
+      .arrow_right {
+        
+        position: absolute;
+        top: 50%;
+        right: 4px !important;
+       
+        transform: translate(0%, -50%);
+      }
+    
+      .arrow_prev {
+        
+        top: 50%;
+        transform: translate(0%, -50%);
+    
+        z-index: 100;
+        left: 8px;
+        position: absolute;
+    
+      }
+    }

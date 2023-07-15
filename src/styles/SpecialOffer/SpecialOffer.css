@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.hero_offer {
+  padding: 0 !important;
+  background-color: #ff3333;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 20px;
+}
+.hero_offer .card {
+  background-color: #777;
+}
+.hero_offer .card .card-img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.hero_offer .card .card-img-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero_offer .card .card-img-overlay .card-title {
+  font-size: 35px !important;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.speacial_products_view_page .flas_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.speacial_products_view_page .flas_menu ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.speacial_products_view_page .flas_menu ul li a:hover {
+  color: var(--primary-color);
+}
+.speacial_products_view_page .special_product_list .Item_offfer {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.speacial_products_view_page .special_product_list .top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 270px;
+  max-height: 270px;
+}
+.speacial_products_view_page .special_product_list .bottom .content {
+  position: relative;
+  margin-bottom: 10px;
+}
+.speacial_products_view_page .special_product_list .bottom .content .mines_money {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+.speacial_products_view_page .special_product_list .bottom .content .fixed_money {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.speacial_products_view_page .special_product_list .bottom .content:hover {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.speacial_products_view_page .special_product_list .bottom .content:hover::before {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #000;
+  width: 100%;
+  height: 223px;
+  position: absolute;
+  cursor: pointer;
+}
+.speacial_products_view_page .special_product_list .bottom .content:hover .cart_btn {
+  display: block;
+}
+.speacial_products_view_page .special_product_list .bottom .content .cart_btn {
+  display: none;
+}
+.speacial_products_view_page .special_product_list .bottom .content .cart_btn h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 15px !important;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #fff;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: underline !important;
+  margin-bottom: 0 !important;
+}
+.speacial_products_view_page .special_product_list .bottom .content .cart_btn h3:hover {
+  color: var(--primary-color);
+}
+.speacial_products_view_page .special_product_list .bottom p {
+  margin: 0 !important;
+}/*# sourceMappingURL=SpecialOffer.css.map */

@@ -1,0 +1,139 @@
+:root {
+  --primary-color:#ff3333;
+  --hover-color:#000;
+  --btn-color:linear-gradient(90deg, rgba(198,44,116,1) 0%, rgba(89,39,110,1) 100%);
+  --hover-btn-color:linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 15px 0;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 99 !important;
+  width: 100%;
+}
+.header .wrapper .logo_chal_dal {
+  width: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.header .wrapper .logo h5 {
+  font-size: 22px !important;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0 !important;
+  width: 100%;
+  font-weight: 600;
+}
+.header .wrapper .input-group {
+  box-shadow: 0px 2px -20px 30px;
+}
+.header .wrapper .input-group .form-control {
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 11px 10px;
+  font-size: 18px;
+}
+.header .wrapper .input-group span {
+  background: var(--btn-color);
+  color: #ffffff;
+  border-radius: 0 !important;
+  font-size: 18px;
+}
+.header .wrapper .input-group span:hover {
+  background: var(--hover-btn-color);
+  cursor: pointer;
+}
+.header .wrapper .input-group .form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.header .wrapper .nav_icon {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.header .wrapper .nav_icon .shop_icon,
+.header .wrapper .nav_icon .notification_icon,
+.header .wrapper .nav_icon .bag_icon,
+.header .wrapper .nav_icon .heart_icon {
+  position: relative;
+}
+.header .wrapper .nav_icon .shop_icon span a,
+.header .wrapper .nav_icon .notification_icon span a,
+.header .wrapper .nav_icon .bag_icon span a,
+.header .wrapper .nav_icon .heart_icon span a {
+  font-size: 30px;
+  color: #000000;
+}
+.header .wrapper .nav_icon .shop_icon span a:hover,
+.header .wrapper .nav_icon .notification_icon span a:hover,
+.header .wrapper .nav_icon .bag_icon span a:hover,
+.header .wrapper .nav_icon .heart_icon span a:hover {
+  transition: 0.3s !important;
+  color: var(--primary-color);
+}
+.header .wrapper .nav_icon .shop_icon .countNm,
+.header .wrapper .nav_icon .notification_icon .countNm,
+.header .wrapper .nav_icon .bag_icon .countNm,
+.header .wrapper .nav_icon .heart_icon .countNm {
+  text-align: center;
+  position: absolute;
+  right: -5px;
+  top: 0px;
+  z-index: 100;
+}
+.header .wrapper .nav_icon .shop_icon .countNm span,
+.header .wrapper .nav_icon .notification_icon .countNm span,
+.header .wrapper .nav_icon .bag_icon .countNm span,
+.header .wrapper .nav_icon .heart_icon .countNm span {
+  background-color: tomato;
+  border-radius: 50%;
+  font-size: 12px !important;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: 300;
+}
+.header .wrapper .nav_icon .shop_icon span,
+.header .wrapper .nav_icon .notification_icon span,
+.header .wrapper .nav_icon .bag_icon span,
+.header .wrapper .nav_icon .heart_icon span {
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+}
+.header .wrapper .profile {
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+.header .wrapper .profile .profile_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .wrapper .profile img {
+  width: 40px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .wrapper .profile h6 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.sticky {
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.Category_view {
+  width: 100%;
+  height: 60vh;
+}
+.Category_view .banner_item img {
+  height: 60vh;
+  width: 100%;
+  overflow-x: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Category_view .content_hero h1 {
+  font-size: 50px;
+  width: 90%;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Category_view .content_hero p {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+.Category_view .arrow {
+  font-size: 40px;
+  cursor: pointer;
+  background: var(--btn-color);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.Category_view .arrow:hover {
+  background: var(--hover-btn-color);
+}
+.Category_view .arrow_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.Category_view .arrow_prev {
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 100;
+  left: 0;
+  position: absolute;
+}
+
+.category__product {
+  width: 100%;
+  overflow: hidden;
+}
+.category__product .category_container {
+  overflow: hidden;
+}
+.category__product .category_container .flas_menu {
+  padding-left: 12px;
+}
+.category__product .category_container .flas_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.category__product .category_container .flas_menu ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.category__product .category_container .flas_menu ul li a:hover {
+  color: var(--primary-color);
+}
+.category__product .category_container .card {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.category__product .category_container .card:hover {
+  cursor: pointer;
+}
+.category__product .category_container .card:hover::before {
+  content: "";
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.category__product .category_container .card:hover img {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.category__product .category_container .card:hover .view_btn {
+  display: block !important;
+  text-align: center;
+  z-index: 2;
+}
+.category__product .category_container .card:hover .view_btn a {
+  background-color: #fff;
+  padding: 5px 50px;
+}
+.category__product .category_container .card img {
+  height: 170px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0 !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  padding-top: 5px;
+  transform: scale(0.8);
+}
+.category__product .category_container .card .card-body {
+  position: relative;
+}
+.category__product .category_container .card .card-body .card-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+.category__product .category_container .card .card-body .card-text {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.category__product .category_container .card .card-body .card-text::first-letter {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.category__product .category_container .card .view_btn {
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+.category__product .category_container .card .view_btn a {
+  font-size: 15px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  background: var(--hover-btn-color);
+  width: 100%;
+  padding: 5px 0;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.category__product .category_container .card .view_btn a:hover {
+  background: #ffffff;
+  box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}/*# sourceMappingURL=Category.css.map */

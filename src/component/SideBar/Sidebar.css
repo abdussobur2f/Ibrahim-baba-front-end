@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.side_bar {
+  height: 100vh !important;
+  bottom: 0;
+  left: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+.side_bar .sidebar {
+  position: fixed;
+  left: 0;
+  top: 109px;
+  background-color: #ffffff;
+  height: 80vh;
+}
+.side_bar .sidebar .ps-menu-button,
+.side_bar .sidebar .ps-menu-label {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+.side_bar .sidebar .sidebar-item {
+  padding: 0 20px;
+  display: block;
+}
+.side_bar .sidebar .sidebar-item .sidebar-title {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+}
+.side_bar .sidebar .sidebar-item .sidebar-title:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.side_bar .sidebar .sidebar-content {
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  height: 0;
+  overflow: hidden;
+}
+.side_bar .sidebar .sidebar-item.open > .sidebar-content {
+  height: auto;
+  overflow: hidden;
+}
+.side_bar .sidebar .sidebar-item.plain {
+  color: #000000;
+  text-decoration: none;
+  line-height: 30px;
+}
+.side_bar .sidebar .sidebar-item.plain:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.side_bar .input-group {
+  margin-top: 10px !important;
+}
+.side_bar .input-group span {
+  background: var(--btn-color);
+  color: #ffffff;
+}
+.side_bar .input-group span:hover {
+  background: var(--hover-btn-color);
+}
+.side_bar .input-group .form-control {
+  outline: none !important;
+  padding: 10px;
+}
+.side_bar .input-group .form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.side_bar .right__side {
+  padding-left: 250px;
+  padding-top: 109px;
+}/*# sourceMappingURL=Sidebar.css.map */

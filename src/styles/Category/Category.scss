@@ -1,0 +1,277 @@
+$ont-nunito: 'Nunito Sans', sans-serif;
+
+$ont-poppins: 'Poppins', sans-serif;
+
+:root {
+    --primary-color: #ff3333;
+    --hover-color: #000;
+    --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+    --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+
+
+}
+
+
+
+
+@mixin arrow_slider {
+
+    .arrow {
+        font-size: 40px;
+        cursor: pointer;
+        background: var(--btn-color);
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+
+        &:hover {
+            background: var(--hover-btn-color);
+        }
+
+    }
+
+    .arrow_right {
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+    }
+
+    .arrow_prev {
+
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        z-index: 100;
+        left: 0;
+        position: absolute;
+
+    }
+}
+
+@mixin card_design {
+    .card {
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+
+
+ 
+
+ &:hover{
+    cursor: pointer;
+    
+    &::before{
+        content: '';
+        background-color: black;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+     }
+
+     img{
+        transform: scale(1);
+        transition: .3s;
+     }
+ }
+ 
+        &:hover .view_btn{
+            display: block !important;
+            text-align: center;
+            z-index: 2;
+            
+            a{
+                background-color: #fff;
+                padding: 5px 50px;
+                
+            }
+        }
+         
+          
+  
+
+        img {
+            height: 170px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 0 !important;
+            object-fit: contain;
+            object-position: top;
+             padding-top: 5px;
+transform: scale(.8);
+
+
+
+
+        }
+
+        .card-body {
+            position: relative;
+
+            .card-title {
+                font-size: 15px;
+                font-weight: 500;
+                font-family: $ont-nunito;
+
+            }
+
+            .card-text {
+                font-size: 15px;
+                font-family: $ont-poppins;
+                font-weight: 400;
+                 &::first-letter{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                 }
+                 
+
+            }
+
+        }
+
+
+        .view_btn{
+ 
+             padding: 5px 0;
+             width: 100%;
+             position: absolute;
+             bottom: 0;
+             display: none;
+
+      
+       
+            a{
+                font-size: 15px !important;
+                font-family: $ont-poppins;
+                font-weight: 400;
+                color: #000;
+                text-align: center;
+                background: var(--hover-btn-color);
+                width: 100%;
+                padding: 5px 0;
+                border: 1px solid #7777;
+              
+               
+
+                &:hover{
+                   background: #ffffff;
+                   box-shadow:inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+               
+                
+                }
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+.Category_view {
+    width: 100%;
+    height: 60vh;
+
+
+
+
+
+
+    .banner_item {
+
+       
+
+        img {
+      
+            height: 60vh;
+            width: 100%;
+            overflow-x: hidden;
+            object-fit: cover;
+        }
+    }
+
+    .content_hero {
+        h1 {
+            font-size: 50px;
+            width: 90%;
+            color: #fff;
+            font-family: $ont-nunito;
+
+
+        }
+
+        p {
+            font-size: 15px;
+            font-family: $ont-nunito;
+            font-weight: 400;
+        }
+    }
+
+    // .slider{
+    //   .img{
+
+    //   }
+    // }
+
+    @include arrow_slider()
+}
+
+
+// flash view product 
+
+
+
+.category__product {
+    width: 100%;
+    overflow: hidden;
+
+    .category_container {
+
+
+
+        .flas_menu {
+            padding-left: 12px;
+
+
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+
+                padding: 0 !important;
+                margin: 0 !important;
+
+                li {
+                    a {
+                        font-size: 15px !important;
+                        font-weight: 400;
+                        font-family: $ont-poppins;
+                        color: #000;
+                        transition: .3s;
+
+                        &:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        overflow: hidden;
+
+        @include card_design()
+    }
+}

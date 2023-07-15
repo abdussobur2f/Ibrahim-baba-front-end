@@ -1,0 +1,55 @@
+:root {
+  --primary-color:#ff3333;
+  --hover-color:#000;
+}
+
+footer {
+  background-color: #fff;
+}
+footer .wrapper .logo h5 {
+  font-size: 22px !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  font-weight: 600;
+}
+footer .wrapper .logo .logo_chal_dal {
+  width: 30px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+footer .wrapper ul li {
+  padding-bottom: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 15px !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+footer .wrapper ul li:hover {
+  color: var(--primary-color);
+}
+footer .wrapper ul li span {
+  margin-right: 5px;
+  font-size: 18px;
+}
+footer .wrapper ul li:first-child {
+  color: var(--hover-color);
+  font-size: 18px !important;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+footer .wrapper .app__Link .play_store, footer .wrapper .app__Link .apple__Store {
+  color: #fff;
+  border-radius: 10px;
+}
+footer .wrapper .app__Link .play_store h4, footer .wrapper .app__Link .apple__Store h4 {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+}
+footer .wrapper .app__Link .play_store p, footer .wrapper .app__Link .apple__Store p {
+  font-size: 14px;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,90 @@
+.product .top_heading h3 {
+  color: tomato;
+}
+.product .card {
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border-right: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(1) {
+  border-left: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(7) {
+  border-left: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(2) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(3) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(4) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(5) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:nth-child(6) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.product .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #f5f5f5;
+}
+.product .card:hover .cart__add {
+  position: absolute;
+  width: 100%;
+  visibility: visible;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product .card img {
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product .card .card-text {
+  font-size: 15px;
+  text-align: center;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.product .card .cart__add {
+  position: absolute;
+  width: 100%;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product .card .card__icon {
+  position: absolute;
+  display: none !important;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  padding-right: 10px;
+  z-index: 10;
+}
+.product .card .card__icon span {
+  font-size: 30px;
+  color: #000000;
+  border-radius: 50%;
+}
+.product .card .card__icon span svg {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #777;
+}
+.product .card .card__icon span svg:hover {
+  background-color: rgb(13, 110, 253);
+}/*# sourceMappingURL=Products.css.map */

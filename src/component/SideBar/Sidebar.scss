@@ -1,0 +1,181 @@
+$ont-nunito: 'Nunito Sans', sans-serif;
+
+$ont-poppins: 'Poppins', sans-serif;
+
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+
+
+}
+
+.side_bar {
+
+  height: 100vh !important;
+ 
+  bottom: 0;
+
+  left: 0;
+  font-family: $ont-nunito;
+  font-weight: 300;
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 109px;
+  
+    background-color: #ffffff;
+ 
+    height:80vh; 
+    .ps-menu-button,
+    .ps-menu-label {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: $ont-nunito;
+
+
+
+    }
+
+    .sidebar-item {
+      padding: 0 20px;
+      display: block;
+
+
+
+
+       
+
+      .sidebar-title {
+        display: flex;
+        align-items: center;
+     
+        font-size: 15px;
+        justify-content: space-between;
+        font-family: $ont-poppins;
+        font-weight: 400;
+        line-height: 30px;
+        color: #000000;
+        &:hover{
+          background-color: #ffffff;
+          color: var(--primary-color);
+          cursor: pointer;
+           
+        }
+      }
+
+
+    }
+
+    .sidebar-content {
+      padding-top: 5px ;
+ font-size: 14px;
+ font-family: $ont-poppins;
+ font-weight: 400;
+      height: 0;
+      overflow: hidden;
+
+  
+    }
+  
+    .sidebar-item.open>.sidebar-content {
+      height: auto;
+      overflow: hidden;
+
+    }
+    
+  .sidebar-item.plain {
+    color: #000000;
+    text-decoration: none;
+    line-height: 30px;
+    &:hover{
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // input group 
+  .input-group {
+    margin-top: 10px !important;
+
+    span {
+      background: var(--btn-color);
+      color: #ffffff;
+
+      &:hover {
+        background: var(--hover-btn-color);
+      }
+    }
+
+    .form-control {
+      outline: none !important;
+
+
+      padding: 10px;
+    }
+
+    .form-control:focus {
+      outline: none !important;
+      box-shadow: none !important;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+  .right__side {
+    padding-left: calc(250px + 0px);
+    padding-top: 109px;
+
+
+
+  }
+
+
+}

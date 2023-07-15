@@ -1,0 +1,327 @@
+
+
+
+
+[
+    {
+        "title": "All Mobile",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": " HUAWEI",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "SAMSUNG",
+                "icon": "bi-info-circle-fill",
+                "path": "/about"
+            },
+            {
+                "title": "Brands",
+                "icon": "bi-phone-fill",
+                "childrens": [
+                    {
+                        "title": "NOKIA",
+                        "icon": "bi-facebook"
+                    },
+                    {
+                        "title": "vivo",
+                        "icon": "bi-twitter"
+                    },
+                    {
+                        "title": "WALTON",
+                        "icon": "bi-instagram"
+                    }
+                ]
+            }
+             
+        ]
+    },
+    {
+        "title": "Electronics & Electric",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": " Fridge",
+                "path": "/login"
+            },
+            {
+                "title": "LED TV",
+                "path": "/register"
+            },
+            {
+                "title": "FIron",
+                "path": "/forgot-password"
+            },
+            {
+                "title": "Fans",
+                "path": "/reset-password"
+            }
+        ]
+    },
+    {
+        "title": "Grocery",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": " Rice",
+                "path": "/profile"
+            },
+            {
+                "title": "Special Offer",
+                "childrens": [
+                    {
+                        "title": "Baby Care",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Popular Product",
+                        "childrens": [
+                            {
+                                "title": "Juice",
+                                "path": "/settings/billing/payment"
+                            },
+                            {
+                                "title": "Bread, Bakery & Biscuit",
+                                "path": "/settings/billing/subscription"
+                            }
+                        ]
+                    }
+                     
+                ]
+            }
+            
+        ]
+    },
+    {
+        "title": "Advance",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Sanitary Items",
+                "path": "/search"
+            },
+            {
+                "title": "Air Freshner",
+                "path": "/history"   
+            }
+        ]
+    },
+    {
+        "title": "Household",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Cleaning Need",
+                "path": "/profile"
+            },
+            {
+                "title": "Dish Detergents",
+                "childrens": [
+                    {
+                        "title": "Laundry",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Stationary",
+                        "childrens": [
+                            {
+                                "title": "Tissue & Napkins",
+                                "path": "/settings/billing/payment"
+                            },
+                            {
+                                "title": "Soaps And Washing",
+                                "path": "/settings/billing/subscription"
+                            },
+                            {
+                                "title": "Shampoo",
+                                "path": "/settings/billing/subscription"
+                            },
+                            {
+                                "title": "Health & Beauty",
+                                "path": "/settings/billing/subscription"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Mekap",
+                        "path": "/settings/notifications"
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "title": "Cosmetics",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Perfume & Body Spra",
+                "path": "/profile"
+            },
+            {
+                "title": "Settings",
+                "childrens": [
+                    {
+                        "title": "Air Freshener",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Hair Removal Accessories",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Hair Oil",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Men Cloths",
+                        "childrens": [
+                            {
+                                "title": "Women Cloths",
+                                "path": "/settings/billing/payment"
+                            },
+                            {
+                                "title": "Women Accessories",
+                                "path": "/settings/billing/subscription"
+                            }
+                        ]
+                    }
+                   
+                ]
+            }
+           
+        ]
+    },
+    {
+        "title": "Watches & Bracelet",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Baby Cloths",
+                "path": "/profile"
+            },
+            {
+                "title": "Baby Cloths",
+                "childrens": [
+                    {
+                        "title": "Shoos",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Watch & Clock",
+                        "childrens": [
+                            {
+                                "title": "Bag & Lages",
+                                "path": "/settings/billing/payment"
+                            },
+                            {
+                                "title": "Garments Accessories",
+                                "path": "/settings/billing/subscription"
+                            }
+                        ]
+                    }
+                   
+                ]
+            },
+            {
+                "title": "Bedding & Porda",
+                "path": "/logout"
+            },
+            {
+                "title": "Bedding & Porda",
+                "path": "/logout"
+            },
+            {
+                "title": "Bedding & Porda",
+                "path": "/logout"
+            }
+        ]
+    },
+    {
+        "title": "Clothing",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Umbrela",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "Borka",
+                "icon": "bi-info-circle-fill",
+                "path": "/about"
+            },
+            {
+                "title": "Thai & Gla",
+                "icon": "bi-phone-fill",
+                "childrens": [
+                    {
+                        "title": "Bricks",
+                        "icon": "bi-facebook"
+                    },
+                    {
+                        "title": "Hardware",
+                        "icon": "bi-twitter"
+                    },
+                    {
+                        "title": "Men Cloths",
+                        "icon": "bi-instagram"
+                    }
+                ]
+            },
+            {
+                "title": "Women Cloths",
+                "icon": "bi-question-circle-fill"
+            }
+        ]
+    },
+    {
+        "title": "Cosmetics",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Shoos",
+                "path": "/login"
+            },
+            {
+                "title": "Baby Cloths",
+                "path": "/register"
+            },
+            {
+                "title": "Gift Item",
+                "path": "/forgot-password"
+            },
+            {
+                "title": "Watch & Clock",
+                "path": "/reset-password"
+            }
+        ]
+    },
+    {
+        "title": "Fashions",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Bag & Lages",
+                "path": "/login"
+            },
+            {
+                "title": "Garments Accessories",
+                "path": "/register"
+            },
+            {
+                "title": "Borka",
+                "path": "/forgot-password"
+            },
+            {
+                "title": "Bedding & Porda",
+                "path": "/reset-password"
+            }
+        ]
+    }
+    
+     
+]

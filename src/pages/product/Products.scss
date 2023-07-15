@@ -1,0 +1,144 @@
+$ont-montes: 'Montserrat', sans-serif;
+
+$ont-poppins: 'Poppins', sans-serif;
+
+
+.product {
+
+    .top_heading {
+        h3 {
+            color: tomato;
+        }
+    }
+
+    .card {
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+
+        border-right: 1px solid #7777 !important;
+        border-bottom: 1px solid #7777 !important;
+
+        &:nth-child(1) {
+
+            border-left: 1px solid #7777 !important;
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:nth-child(7) {
+
+            border-left: 1px solid #7777 !important;
+        }
+
+        &:nth-child(2) {
+
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:nth-child(3) {
+
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:nth-child(4) {
+
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:nth-child(5) {
+
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:nth-child(6) {
+
+            border-top: 1px solid #7777 !important;
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            background-color: #f5f5f5;
+
+        }
+
+        &:hover .cart__add {
+
+            position: absolute;
+            width: 100%;
+            visibility: visible;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        // &:hover .card__icon {
+        //     display: flex !important;
+        //     right: 0;
+
+        // }
+
+
+
+
+        img {
+
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card-text {
+            font-size: 15px;
+            text-align: center;
+            overflow-x: hidden;
+            font-weight: 400;
+            font-family: $ont-montes ;
+        }
+
+        .cart__add {
+            position: absolute;
+            width: 100%;
+
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .card__icon {
+            position: absolute;
+            display: none !important;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+
+            padding: 5px;
+            padding-right: 10px;
+            z-index: 10;
+
+            span {
+                font-size: 30px;
+                color: #000000;
+                border-radius: 50%;
+
+                svg {
+                    border-radius: 50%;
+                    padding: 5px;
+                    border: 1px solid #777;
+
+                    &:hover {
+                        background-color: rgb(13, 110, 253);
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}

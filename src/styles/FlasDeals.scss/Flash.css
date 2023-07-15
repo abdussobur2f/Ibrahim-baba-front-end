@@ -1,0 +1,209 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.flas_deals_all {
+  width: 100%;
+  height: 60vh;
+}
+.flas_deals_all .slider_item .card {
+  background-color: #777;
+}
+.flas_deals_all .slider_item .card .card-img-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flas_deals_all .slider_item .card .card-img-overlay .card-title {
+  font-size: 35px !important;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.flas_deals_all .slider_item img {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  overflow-x: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.flas_deals_all .content_hero h1 {
+  font-size: 50px;
+  width: 90%;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.flas_deals_all .content_hero p {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+.flas_deals_all .arrow {
+  font-size: 40px;
+  cursor: pointer;
+  background: var(--btn-color);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.flas_deals_all .arrow:hover {
+  background: var(--hover-btn-color);
+}
+.flas_deals_all .arrow_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.flas_deals_all .arrow_prev {
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 100;
+  left: 0;
+  position: absolute;
+}
+
+.Flas__view_page {
+  width: 100%;
+  overflow: hidden;
+}
+.Flas__view_page .flash_container .flas_menu {
+  padding-left: 12px;
+}
+.Flas__view_page .flash_container .flas_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.Flas__view_page .flash_container .flas_menu ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.Flas__view_page .flash_container .flas_menu ul li a:hover {
+  color: var(--primary-color);
+}
+.Flas__view_page .flash_container .flash_view_item {
+  overflow: hidden;
+}
+.Flas__view_page .flash_container .flash_view_item .card {
+  position: relative;
+  max-height: 270px;
+  min-height: 290px;
+  border: none !important;
+  box-shadow: 0px 0px 30px -20px;
+}
+.Flas__view_page .flash_container .flash_view_item .card:hover .hover_card {
+  opacity: 1;
+  z-index: 1000;
+}
+.Flas__view_page .flash_container .flash_view_item .card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.Flas__view_page .flash_container .flash_view_item .card:hover::before {
+  content: "";
+  opacity: 0.4;
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.Flas__view_page .flash_container .flash_view_item .card img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body {
+  position: relative;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-title {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-title::first-letter {
+  text-transform: uppercase;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-text {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-text .rating h5 {
+  font-size: 15px;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-text .price_product {
+  display: flex;
+  align-items: baseline !important;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-text .price_product span {
+  font-size: 15px;
+  font-weight: 400;
+}
+.Flas__view_page .flash_container .flash_view_item .card .card-body .card-text .price_product h4 {
+  font-size: 13px !important;
+  font-weight: 200;
+  text-decoration: line-through !important;
+}
+.Flas__view_page .flash_container .flash_view_item .card .hover_card {
+  position: absolute;
+  transition: 0.3s;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: -33px;
+  color: black;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.Flas__view_page .flash_container .flash_view_item .card .hover_card span {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Flas__view_page .flash_container .flash_view_item .card .hover_card span:hover {
+  color: var(--primary-color);
+}
+.Flas__view_page .flash_container .flash_view_item .card .cart__add {
+  position: absolute;
+  width: 100%;
+  right: 50%;
+  bottom: -60px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Flas__view_page .flash_container .flash_view_item .card .cart__add .btn_Cart_add {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 5px 0;
+  background: transparent !important;
+  background-color: #000;
+  padding: 5px 0;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: 0px 3px 50px -20px !important;
+}
+.Flas__view_page .flash_container .flash_view_item .card .cart__add .btn_Cart_add:hover {
+  background: var(--hover-btn-color) !important;
+  color: white;
+}/*# sourceMappingURL=Flash.css.map */

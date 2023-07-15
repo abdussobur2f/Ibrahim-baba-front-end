@@ -1,0 +1,84 @@
+$ont-nunito: 'Nunito Sans', sans-serif;
+ 
+$ont-poppins: 'Poppins', sans-serif;
+
+:root{
+    --primary-color:#ff3333;
+    --hover-color:#000;
+}
+
+
+
+footer{
+    background-color: #fff;
+ 
+    
+    .wrapper{
+        .logo {
+            h5 {
+                font-size: 22px !important;
+                font-family: $ont-nunito !important;
+                margin-bottom: 0 !important;
+             
+                width: 100%;
+              font-weight: 600;
+           
+            }
+                 
+            .logo_chal_dal{
+                width: 30px !important;
+                 object-fit: cover;
+             
+                height: auto;
+            }
+        }
+        ul{
+            li{
+                padding-bottom: 10px;
+            
+            font-family: $ont-nunito;
+                text-transform: capitalize;
+                font-size: 15px !important;
+                font-weight: 500;
+cursor: pointer;
+
+                &:hover{
+                 color: var(--primary-color);
+                }
+
+                span{
+                    margin-right: 5px;
+                    font-size: 18px;
+                }
+                &:first-child{
+                    color:var(--hover-color);
+                    font-size: 18px !important;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+
+                }
+            }
+        }
+
+
+        .app__Link{
+            
+            .play_store,.apple__Store{
+                color: #fff;
+                
+                border-radius: 10px;
+                h4{
+font-size: 15px !important;
+font-weight: 400;
+font-family: $ont-nunito;
+                }
+                p{
+                    font-size: 14px;
+                }
+ 
+                 
+            }
+        }
+    }
+}

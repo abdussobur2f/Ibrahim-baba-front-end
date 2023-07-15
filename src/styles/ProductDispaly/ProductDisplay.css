@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.modal-dialog {
+  max-width: 65%;
+}
+
+.products {
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+.products .description__container {
+  background-color: rgba(245, 245, 245, 0.9607843137);
+}
+.products .description__container .filter_product_link .fillter_products a {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: capitalize !important;
+}
+.products .description__container .filter_product_link .fillter_products a:hover {
+  background: var(--hover-btn-color) !important;
+}
+.products .description__container .filter_products_product p {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.products .description__container .rating h3 {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+.products .description__container .review_box .form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.products .product_main_wrraper {
+  width: 100%;
+}
+.products .product_main_wrraper .filter_item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.products .product_main_wrraper .Products__details .ourFlowers {
+  font-family: "Nunito Sans", sans-serif;
+}
+.products .product_main_wrraper .Products__details .ourFlowers .follow {
+  font-size: 18px;
+}
+.products .product_main_wrraper .Products__details .ourFlowers .bstwitter {
+  background-color: #1DA1F2 !important;
+}
+.products .product_main_wrraper .Products__details .ourFlowers .bsfacebok {
+  background-color: #007bc7 !important;
+}
+.products .product_main_wrraper .Products__details .ourFlowers .bsgoogle {
+  background-color: #f2441d !important;
+}
+.products .product_main_wrraper .Products__details .ourFlowers .bspinterest {
+  background-color: #f2391d !important;
+}
+.products .product_main_wrraper .Products__details .ourFlowers span {
+  font-size: 15px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  text-transform: capitalize;
+}
+.products .product_main_wrraper .Products__details .ourFlowers img,
+.products .product_main_wrraper .Products__details .ourFlowers svg {
+  vertical-align: middle;
+  background: rgb(0, 0, 0);
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+  color: #fff;
+}
+.products .product_main_wrraper .Products__details .ourFlowers img:hover,
+.products .product_main_wrraper .Products__details .ourFlowers svg:hover {
+  background-color: #000000 !important;
+}
+.products .product_main_wrraper .Products__details .products_head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+  margin-bottom: 15px;
+}
+.products .product_main_wrraper .Products__details .products_head p {
+  font-size: 25px;
+  font-weight: 500;
+}
+.products .product_main_wrraper .Products__details .products_head span {
+  color: tomato;
+}
+.products .product_main_wrraper .Products__details .cout_product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.products .product_main_wrraper .Products__details .cout_product .incrment_btn {
+  display: flex;
+  align-items: center;
+}
+.products .product_main_wrraper .Products__details .cout_product .incrment_btn button {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  font-size: 24px;
+  outline: none !important;
+  background: transparent;
+  padding: 0 12px;
+}
+.products .product_main_wrraper .Products__details .cout_product .incrment_btn button:nth-child(2) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.products .product_main_wrraper .Products__details .cout_product .incrment_btn button:nth-child(1):hover {
+  background-color: var(--primary-color);
+}
+.products .product_main_wrraper .Products__details .cout_product .incrment_btn button:nth-child(3):hover {
+  background-color: var(--primary-color);
+}/*# sourceMappingURL=ProductDisplay.css.map */

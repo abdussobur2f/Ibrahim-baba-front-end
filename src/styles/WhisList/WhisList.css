@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.whislist .whislist_hero {
+  height: 50vh;
+  overflow: hidden;
+}
+.whislist .whislist_hero img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.whislist .flas_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.whislist .flas_menu ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.whislist .flas_menu ul li a:hover {
+  color: var(--primary-color);
+}
+.whislist .product_list .card {
+  min-height: 290px;
+  max-height: 280px;
+  position: relative;
+  border: none !important;
+  box-shadow: 0px 0px 30px -20px;
+}
+.whislist .product_list .card:hover .hover_card {
+  opacity: 1;
+  z-index: 1000;
+}
+.whislist .product_list .card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.whislist .product_list .card:hover::before {
+  content: "";
+  opacity: 0.4;
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.whislist .product_list .card img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.whislist .product_list .card .card-body {
+  position: relative;
+}
+.whislist .product_list .card .card-body .card-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.whislist .product_list .card .card-body .card-title::first-letter {
+  text-transform: uppercase;
+}
+.whislist .product_list .card .card-body .card-text {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+}
+.whislist .product_list .card .card-body .card-text .rating h5 {
+  font-size: 18px;
+}
+.whislist .product_list .card .card-body .card-text .rating h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.whislist .product_list .card .card-body .card-text .rating h3 span {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.whislist .product_list .card .card-body .card-text .price_product {
+  display: flex;
+  align-items: baseline !important;
+}
+.whislist .product_list .card .card-body .card-text .price_product span {
+  font-size: 15px;
+  font-weight: 400;
+}
+.whislist .product_list .card .card-body .card-text .price_product h4 {
+  font-size: 13px !important;
+  font-weight: 200;
+  text-decoration: line-through !important;
+}
+.whislist .product_list .card .hover_card {
+  position: absolute;
+  transition: 0.3s;
+  text-align: center;
+  right: 0;
+  left: 0;
+  color: black;
+  top: -27px;
+  opacity: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 0.7px solid rgba(119, 119, 119, 0.4666666667);
+}
+.whislist .product_list .card .hover_card a {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.whislist .product_list .card .hover_card a:hover {
+  color: var(--primary-color);
+}
+.whislist .product_list .card .cart__add {
+  position: absolute;
+  width: 100%;
+  right: 50%;
+  bottom: -60px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 5px;
+}
+.whislist .product_list .card .cart__add .btn_Cart_add {
+  border: 0.3px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 5px 0;
+  background-color: #000;
+  padding: 5px 0;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: 0px 0px 47px -48px !important;
+  background: transparent !important;
+}
+.whislist .product_list .card .cart__add .btn_Cart_add:hover {
+  color: #ffffff;
+  background: var(--hover-btn-color) !important;
+}
+.whislist .product_list .card .whislist_icon {
+  position: absolute;
+  color: #fff;
+  right: 10px;
+  top: 0px;
+  font-size: 30px !important;
+  z-index: 10;
+}/*# sourceMappingURL=WhisList.css.map */

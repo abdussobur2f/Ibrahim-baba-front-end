@@ -1,0 +1,350 @@
+$ont-nunito: 'Nunito Sans', sans-serif;
+
+$ont-poppins: 'Poppins', sans-serif;
+
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+
+
+}
+
+
+@mixin slider {
+  .card {
+    background-color: #777;
+  
+    .card-img-overlay {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .card-title {
+        font-size: 35px !important;
+        font-family: $ont-nunito;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+      }
+    }
+  }
+}
+
+@mixin arrow_slider {
+
+  .arrow {
+    font-size: 40px;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+
+    &:hover {
+      background: var(--hover-btn-color);
+    }
+
+  }
+
+  .arrow_right {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+  }
+
+  .arrow_prev {
+
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    z-index: 100;
+    left: 0;
+    position: absolute;
+
+  }
+}
+
+@mixin card_design {
+  .card {
+    position: relative;
+    max-height: 270px;
+    min-height: 290px;
+    border: none !important;
+    box-shadow: 0px 0px 30px -20px;
+
+
+
+
+    &:hover .hover_card {
+      opacity: 1;
+      z-index: 1000;
+
+    }
+
+    &:hover {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        opacity: .4;
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        left: 0;
+        top: 0;
+        z-index: 100;
+      }
+    }
+
+    // &:hover .cart__add {
+    //   bottom: -60px;
+    //   position: absolute;
+    //   width: 100%;
+    //   display: block !important;
+    //   box-shadow: 0px 3px 50px -20px !important;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   padding: 1px 0;
+
+    // }
+
+    img {
+      height: 180px;
+      object-fit: cover;
+      object-position: top;
+
+
+
+
+
+    }
+
+    .card-body {
+      position: relative;
+
+      .card-title {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $ont-poppins;
+
+        &::first-letter {
+          text-transform: uppercase;
+
+        }
+      }
+
+      .card-text {
+        font-size: 15px;
+        font-family: $ont-poppins !important;
+        font-weight: 400;
+
+        .rating {
+          h5 {
+            font-size: 15px;
+
+
+
+
+          }
+
+
+        }
+
+        .price_product {
+          display: flex;
+          align-items: baseline !important;
+
+          span {
+            font-size: 15px;
+            font-weight: 400;
+
+          }
+
+          h4 {
+            font-size: 13px !important;
+            font-weight: 200;
+
+            text-decoration: line-through !important;
+
+          }
+        }
+
+      }
+    }
+
+    .hover_card {
+      position: absolute;
+      transition: .3s;
+
+      text-align: center;
+      right: 0;
+      left: 0;
+      top: -33px;
+      color: black;
+      opacity: 0;
+      background-color: #ffffff;
+
+      span {
+        font-size: 22px;
+        color: #000000;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .cart__add {
+      position: absolute;
+      width: 100%;
+      right: 50%;
+      bottom: -60px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+
+
+
+      .btn_Cart_add {
+        border: 1px solid #7777;
+        padding: 5px 0;
+        background: transparent !important;
+        background-color: #000;
+        padding: 5px 0;
+        color: #000;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $ont-nunito;
+        box-shadow: 0px 3px 50px -20px !important;
+
+        &:hover {
+          background: var(--hover-btn-color) !important;
+          color: #ffff;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+
+
+
+
+.flas_deals_all {
+  width: 100%;
+  height: 60vh;
+
+
+
+
+
+
+  .slider_item {
+
+    @include slider();
+
+    img {
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      overflow-x: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .content_hero {
+    h1 {
+      font-size: 50px;
+      width: 90%;
+      color: #fff;
+      font-family: $ont-nunito;
+
+
+    }
+
+    p {
+      font-size: 15px;
+      font-family: $ont-nunito;
+      font-weight: 400;
+    }
+  }
+
+  // .slider{
+  //   .img{
+
+  //   }
+  // }
+
+  @include arrow_slider()
+}
+
+
+// flash view product 
+
+
+
+.Flas__view_page {
+  width: 100%;
+  overflow: hidden;
+
+  .flash_container {
+
+
+
+    .flas_menu {
+      padding-left: 12px;
+
+
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        gap: 3px;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        li {
+          a {
+            font-size: 15px !important;
+            font-weight: 400;
+            font-family: $ont-poppins;
+            color: #000;
+            transition: .3s;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+  
+      }
+    }
+
+    .flash_view_item {
+      overflow: hidden;
+
+      @include card_design()
+    }
+
+
+  }
+}
