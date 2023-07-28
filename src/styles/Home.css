@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
 }
 .hero_section .slider_item .card .card-img-overlay .card-title {
-  font-size: 35px !important;
+  font-size: 35px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   margin-bottom: 20px;
@@ -84,20 +84,28 @@
   left: 0;
   position: absolute;
 }
+.hero_section .slick-dots {
+  bottom: -28px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: sticky;
+}
 
 .flasDeails {
   font-family: "Nunito Sans", sans-serif;
 }
 .flasDeails .card {
-  min-height: 290px;
-  max-height: 280px;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   border: none !important;
   box-shadow: 0px 0px 30px -20px;
 }
 .flasDeails .card:hover .hover_card {
   opacity: 1;
-  z-index: 1000;
+  z-index: 10;
 }
 .flasDeails .card:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -224,15 +232,15 @@
 }
 
 .latest_products .card {
-  min-height: 290px;
-  max-height: 280px;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   border: none !important;
   box-shadow: 0px 0px 30px -20px;
 }
 .latest_products .card:hover .hover_card {
   opacity: 1;
-  z-index: 1000;
+  z-index: 10;
 }
 .latest_products .card:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -359,15 +367,15 @@
 }
 
 .just_for__you .card {
-  min-height: 290px;
-  max-height: 280px;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   border: none !important;
   box-shadow: 0px 0px 30px -20px;
 }
 .just_for__you .card:hover .hover_card {
   opacity: 1;
-  z-index: 1000;
+  z-index: 10;
 }
 .just_for__you .card:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -495,4 +503,104 @@
 
 .styleBtn {
   background-color: #777;
+}
+
+.cart_container .top_heading_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.cart_container .top_heading_cart .close {
+  font-size: 30px !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cart_container .top_heading_cart .close:hover {
+  color: var(--primary-color);
+}
+.cart_container .cart_body {
+  background-color: #f5f5f5;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cart_container .cart_images img {
+  min-height: 120px;
+  max-height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart_container .cart_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+.cart_container .cout_product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+.cart_container .cout_product .incrment_btn {
+  display: flex;
+  align-items: center;
+}
+.cart_container .cout_product .incrment_btn button {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  font-size: 19px;
+  outline: none !important;
+  background: transparent;
+  padding: 0 8px;
+}
+.cart_container .cout_product .incrment_btn button:nth-child(2) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.cart_container .cout_product .incrment_btn button:nth-child(1):hover {
+  background-color: var(--primary-color);
+}
+.cart_container .cout_product .incrment_btn button:nth-child(3):hover {
+  background-color: var(--primary-color);
+}
+.cart_container .cout_product .point h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.cart_container .cout_product .point h4 span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px !important;
+}
+.cart_container .price span {
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+.cart_container .total_amount {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667);
+  margin: 10px;
+  padding-top: 10px;
+}
+.cart_container .total_amount .subtotal, .cart_container .total_amount .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.cart_container .total_amount .subtotal h3, .cart_container .total_amount .total h3 {
+  font-size: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+.cart_container .total_amount .subtotal span, .cart_container .total_amount .total span {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
 }/*# sourceMappingURL=Home.css.map */

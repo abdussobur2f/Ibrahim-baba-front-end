@@ -12,12 +12,10 @@ import CategoryAll from "../Category/CategoryAll"
 import LatestProduct from "../LatestProduct/LatestProduct"
 import SpecialOffer from "../SpecialOffer/SpecialOffer"
 import WhisList from "../WhisList/WhisList"
-import CartShow from "../CartList/CartShow"
-import ProductDisplay from '../../component/ProductDisplay/ProductDisplay'
 import ModalContent from "../../component/ProductDisplay/ModalContent"
 import CheakOut from "../CheakOut/CheakOut"
  
-const Home = () => {
+const Home = ({showMenu,hideMenu}) => {
 
   return (
     <>
@@ -25,7 +23,13 @@ const Home = () => {
 
       <main className='side_bar position-relative '>
  
-        <SideBar />
+  
+ 
+    <SideBar   showMenu={showMenu} hideMenu={hideMenu} />  
+ 
+ 
+ 
+ 
  
         <aside className='right__side'>
  
@@ -38,7 +42,7 @@ const Home = () => {
             <Route path='latestProduct' element={<LatestProduct />} />
             <Route path='Offer' element={<SpecialOffer />} />
             <Route path='whislist' element={<WhisList />} />
-            <Route path='cartList' element={<CartShow />} />
+           
            
             <Route path='con' element={<ModalContent />} />
             <Route path='cheakout' element={<CheakOut />} />

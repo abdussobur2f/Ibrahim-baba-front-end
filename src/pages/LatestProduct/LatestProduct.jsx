@@ -39,12 +39,12 @@ const [product,setProduct] = useState([])
 
           {/*  hero item */}
 
-          <div className="latest_Products_hero">
-<div className="row">
-  <div className="col-6 px-2">
+          <div className="latest_Products_hero w-100  h-100">
+<div className="row ">
+  <div className="col-lg-6 col-md-6 px-lg-2 px-0 mb-2 mb-lg-0 mb-md-0">
     <img className='' src={banner1} alt="" />
   </div>
-  <div className="col-6 px-2">
+  <div className="col-lg-6 col-md-6 px-lg-2 px-0">
   <img src={banner2} alt="" />
 
   </div>

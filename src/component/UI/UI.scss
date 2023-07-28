@@ -10,6 +10,9 @@ $ont-nunito: 'Nunito Sans', sans-serif;
  
 $ont-poppins: 'Poppins', sans-serif;
 
+
+
+
 .speacial_products{
  
  
@@ -17,6 +20,7 @@ $ont-poppins: 'Poppins', sans-serif;
 
   
       padding: 0 7px;
+     
       .card{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
          .card-img-top{
@@ -33,7 +37,8 @@ $ont-poppins: 'Poppins', sans-serif;
         font-family: $ont-nunito;
         text-transform: capitalize;
        img{
-        height: 130px !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
         object-fit: cover;
         object-position: top;
        }
@@ -74,7 +79,7 @@ $ont-poppins: 'Poppins', sans-serif;
         
         position: absolute;
         top: 50%;
-        right: 4px !important;
+        right: 8px !important;
        
         transform: translate(0%, -50%);
       }

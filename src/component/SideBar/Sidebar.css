@@ -8,31 +8,31 @@
 .side_bar {
   height: 100vh !important;
   bottom: 0;
+  overflow-y: scroll;
   left: 0;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
+  background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 .side_bar .sidebar {
   position: fixed;
   left: 0;
-  top: 109px;
-  background-color: #ffffff;
+  top: 92px;
+  max-width: 250px;
+  min-width: 250px;
+  padding: 10px;
+  overflow-y: scroll;
   height: 80vh;
 }
-.side_bar .sidebar .ps-menu-button,
-.side_bar .sidebar .ps-menu-label {
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "Nunito Sans", sans-serif;
-}
 .side_bar .sidebar .sidebar-item {
-  padding: 0 20px;
+  padding: 0 10px;
   display: block;
 }
 .side_bar .sidebar .sidebar-item .sidebar-title {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 14px;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -65,6 +65,41 @@
   color: var(--primary-color);
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .side_bar .sidebar {
+    left: -100%;
+    top: 0;
+  }
+  .side_bar .sidebar .logo_chal_dal {
+    width: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+  }
+  .side_bar .sidebar .logo img {
+    width: 30px;
+    height: auto;
+  }
+  .side_bar .sidebar .logo h5 {
+    font-size: 18px !important;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0 !important;
+    width: 100%;
+    font-weight: 600;
+  }
+  .side_bar .sidebar .close_menu span {
+    font-size: 25px;
+  }
+  .side_bar .sidebar .close_menu span:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+.side_bar .menu_show {
+  left: 0% !important;
+  height: 100vh;
+  transition: 0.4s;
+}
 .side_bar .input-group {
   margin-top: 10px !important;
 }
@@ -85,5 +120,5 @@
 }
 .side_bar .right__side {
   padding-left: 250px;
-  padding-top: 109px;
+  padding-top: 92px;
 }/*# sourceMappingURL=Sidebar.css.map */

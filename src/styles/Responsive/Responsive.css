@@ -1,1 +1,73 @@
-/*# sourceMappingURL=Responsive.css.map */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    z-index: 100000;
+    background-color: white;
+  }
+  .card .card-text, .card .card-title {
+    font-size: 13px !important;
+  }
+  .card .card-body, .card .card-text, .card .rating h3 span {
+    text-transform: capitalize;
+    font-size: 13px !important;
+  }
+  .card-img-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin-bottom: 10px !important;
+  }
+  .card-img-overlay .card-title {
+    font-size: 22px !important;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+  }
+  .card-img-overlay .card-text {
+    margin-bottom: 10px !important;
+    text-align: center;
+  }
+  .counting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+  .counting h6 {
+    font-size: 18px !important;
+  }
+  .counting span {
+    background-color: #fff;
+    padding: 1px 10px;
+    color: #000000;
+    font-size: 18px !important;
+    margin: 0 2px;
+  }
+  .sub-heading {
+    font-size: 18px !important;
+    font-weight: 400;
+  }
+}
+.special_product_list .bottom .content img {
+  min-height: 200px;
+  max-width: 200px;
+  margin: auto;
+}
+.special_product_list .bottom .content:hover {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.special_product_list .bottom .content:hover::before {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #000;
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  cursor: pointer;
+}
+.special_product_list .my-btn-black {
+  padding: 5px;
+}/*# sourceMappingURL=Responsive.css.map */

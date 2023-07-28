@@ -1,0 +1,219 @@
+:root {
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+}
+
+.cheakOut {
+  background-color: white;
+}
+.cheakOut .container__cheak .delivery_infomation {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px !important;
+}
+.cheakOut .container__cheak .delivery_infomation .information_heading {
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 5px 0;
+}
+.cheakOut .container__cheak .flas_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.cheakOut .container__cheak .flas_menu ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: 0.3s;
+}
+.cheakOut .container__cheak .flas_menu ul li a:hover {
+  color: var(--primary-color);
+}
+.cheakOut .container__cheak .contact_info {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 15px;
+  border-radius: 10px;
+}
+.cheakOut .container__cheak .contact_info img {
+  max-width: 70px;
+  min-width: 70px;
+  max-height: 70px;
+  min-height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.cheakOut .container__cheak .contact_info .content_contact {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cheakOut .container__cheak .address_type .address_type_content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.cheakOut .container__cheak .address_type .home_delivery,
+.cheakOut .container__cheak .address_type .office {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cheakOut .container__cheak .address_type .home_delivery p,
+.cheakOut .container__cheak .address_type .office p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.cheakOut .container__cheak .copun {
+  background-color: #f5f5f5;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+}
+.cheakOut .container__cheak .copun .form-control {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+}
+.cheakOut .container__cheak .copun button {
+  border-radius: 20px !important;
+  padding: 5px 30px;
+  outline: none;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.cheakOut .container__cheak .copun button:hover {
+  background: var(--btn-color);
+  color: #ffffff;
+}
+.cheakOut .container__cheak .payment_methood .payment_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cheakOut .container__cheak .payment_methood .cash_on,
+.cheakOut .container__cheak .payment_methood .online_payment,
+.cheakOut .container__cheak .payment_methood .pos_delivery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cheakOut .container__cheak .payment_methood .cash_on p,
+.cheakOut .container__cheak .payment_methood .online_payment p,
+.cheakOut .container__cheak .payment_methood .pos_delivery p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.cheakOut .container__cheak .order_summery {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  padding: 20px;
+  border-radius: 20px;
+}
+.cheakOut .container__cheak .order_summery .order_heading {
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  padding: 5px 0;
+}
+.cheakOut .container__cheak .order_summery .order_container {
+  padding: 10px 0;
+}
+.cheakOut .container__cheak .order_summery .order_container .cart_body {
+  padding: 10px;
+}
+.cheakOut .container__cheak .order_summery .order_container .cart_images img {
+  min-height: 120px;
+  max-height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cheakOut .container__cheak .order_summery .order_container .cart_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .incrment_btn {
+  display: flex;
+  align-items: center;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .incrment_btn button {
+  border: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  font-size: 19px;
+  outline: none !important;
+  background: transparent;
+  padding: 0 8px;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .incrment_btn button:nth-child(2) {
+  border-top: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .incrment_btn button:nth-child(1):hover {
+  background-color: var(--primary-color);
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .incrment_btn button:nth-child(3):hover {
+  background-color: var(--primary-color);
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .point h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.cheakOut .container__cheak .order_summery .order_container .cout_product .point h4 span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px !important;
+}
+.cheakOut .container__cheak .order_summery .order_container .price span {
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+.cheakOut .container__cheak .order_summery .order_container .total_amount {
+  margin: 10px;
+  padding-top: 10px;
+}
+.cheakOut .container__cheak .order_summery .order_container .total_amount .subtotal, .cheakOut .container__cheak .order_summery .order_container .total_amount .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.cheakOut .container__cheak .order_summery .order_container .total_amount .subtotal h3, .cheakOut .container__cheak .order_summery .order_container .total_amount .total h3 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.cheakOut .container__cheak .order_summery .order_container .total_amount .subtotal span, .cheakOut .container__cheak .order_summery .order_container .total_amount .total span {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}/*# sourceMappingURL=CheakOut.css.map */

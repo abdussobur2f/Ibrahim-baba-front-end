@@ -1,8 +1,8 @@
 :root {
-  --primary-color:#ff3333;
-  --hover-color:#000;
-  --btn-color:linear-gradient(90deg, rgba(198,44,116,1) 0%, rgba(89,39,110,1) 100%);
-  --hover-btn-color:linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
 }
 
 * {
@@ -27,33 +27,45 @@
   background-color: var(--hover-color);
 }
 
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: antiquewhite;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-color);
+  }
+}
 body {
   background-color: white !important;
 }
 
-li, a, h1, h2, h3, h4, h5, h5 {
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
   list-style: none;
   text-decoration: none !important;
   margin-bottom: 0 !important;
 }
 
-.heading_top_flas {
+.top_heading {
   position: relative;
+  display: flex;
+  align-items: center;
   padding: 10px 0;
   color: #ffffff;
   background-color: var(--primary-color);
-}
-.heading_top_flas::before {
-  position: relative;
-  content: "";
-  background-color: rgba(119, 119, 119, 0.4666666667) !important;
-  width: 100%;
-  left: 0;
-  padding: 0 10px;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .viwe {
@@ -75,7 +87,11 @@ li, a, h1, h2, h3, h4, h5, h5 {
 }
 
 .counting {
-  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.counting h6 {
+  font-size: 20px;
 }
 .counting span {
   background-color: #fff;
@@ -97,7 +113,7 @@ li, a, h1, h2, h3, h4, h5, h5 {
 }
 
 .my-btn {
-  padding: 5px 10px;
+  padding: 5px 8px;
   background: var(--btn-color);
   outline: none;
   border: none;
@@ -112,8 +128,9 @@ li, a, h1, h2, h3, h4, h5, h5 {
 .my-btn-black {
   padding: 5px 10px;
   outline: none;
+  text-transform: capitalize;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   border: 1px solid rgba(119, 119, 119, 0.4666666667);
   color: black;
@@ -124,4 +141,10 @@ li, a, h1, h2, h3, h4, h5, h5 {
 .my-btn-black:hover {
   background: var(--hover-btn-color);
   color: #ffffff;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }/*# sourceMappingURL=Main.css.map */

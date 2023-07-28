@@ -1,24 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../Header'
   import Home from '../../pages/home/Home'
- import { Routes ,Route } from 'react-router-dom'
+ 
 //  import ProductDisplay from '../../component/ProductDisplay/ProductDisplay'
 const Layout = () => {
+  const [showMenu,setShowMenu ] = useState(false)
+
+  const sidebarShow = () =>{
+    setShowMenu(true)
+    
+ 
+  }
+ 
+  const hideMenu = () =>{
+    setShowMenu(false)
+    console.log("hellp")
+    
+ 
+  }
+ 
+
   return (
     <>
-    <Header/>
+    <Header sidebarShow={sidebarShow} />
    
  
-<Home/>
+<Home showMenu={showMenu} hideMenu={hideMenu}/>
 
- <Routes>
- <Route path='header' element={<Header />} />
-
- <Route path='mainhome' element={<Home />} />
-
-
-
- </Routes>
+ 
   
 
       

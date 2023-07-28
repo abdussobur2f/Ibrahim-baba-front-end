@@ -72,7 +72,7 @@ const SpecialOffer = () => {
 
 <div className="special_product_list  ">
 
-<div className="row ">
+<div className="row h-100">
 {
   slideData.slice(0).map((item)=>{
     return(
@@ -81,14 +81,17 @@ const SpecialOffer = () => {
 
 
       <div className="row p-2">
-        <div className="col-8  pe-0">
+        <div className="col-12 col-lg-8 col-md-8 pe-0 ">
   <div className="top h-100 ">
   <img src={item.urls.small} alt="" className="img-fluid  h-100
   " />
   </div>
         </div>
-        <div className="col-4 ">
-  <div className="bottom">
+
+
+        {/* BOTTOM  CONTENT */}
+        <div className="col-lg-4  col-md-4 col-12 h-100">
+  <div className="bottom "> 
   <div className="content text-center d-flex flex-column py-2">
   <img src={banner1} alt="" className="img-fluid  " />
   

@@ -16,31 +16,26 @@ $ont-poppins: 'Poppins', sans-serif;
   height: 100vh !important;
  
   bottom: 0;
-
+overflow-y: scroll;
   left: 0;
   font-family: $ont-nunito;
   font-weight: 300;
+  background-color: #f5f5f5;
+    background-color: #f5f5f5;
 
   .sidebar {
     position: fixed;
     left: 0;
-    top: 109px;
-  
-    background-color: #ffffff;
- 
+    top: 92px;
+  max-width: 250px;
+  min-width: 250px;
+padding: 10px;
+ overflow-y: scroll;
     height:80vh; 
-    .ps-menu-button,
-    .ps-menu-label {
-      font-size: 15px;
-      font-weight: 600;
-      font-family: $ont-nunito;
-
-
-
-    }
-
+ 
+     
     .sidebar-item {
-      padding: 0 20px;
+      padding: 0 10px;
       display: block;
 
 
@@ -52,7 +47,7 @@ $ont-poppins: 'Poppins', sans-serif;
         display: flex;
         align-items: center;
      
-        font-size: 15px;
+        font-size: 14px;
         justify-content: space-between;
         font-family: $ont-poppins;
         font-weight: 400;
@@ -98,14 +93,57 @@ $ont-poppins: 'Poppins', sans-serif;
   }
 
 
-
   }
 
+@media screen and (max-width:768px) {
+  .sidebar{
+ left: -100%;
+
+    top: 0;
 
 
+    .logo_chal_dal {
+      width: 30px;
+      object-fit: cover;
 
+      height: auto;
+  }
 
+  .logo {
+    img{
+      width: 30px;
+      height: auto;
+    }
+      h5 {
+          font-size: 18px !important;
+          font-family: $ont-poppins;
+          margin-bottom: 0 !important;
 
+          width: 100%;
+          font-weight: 600;
+
+      }
+  }
+
+  .close_menu{
+    span{
+      font-size: 25px;
+      &:hover{
+        color: var(--primary-color);
+      cursor: pointer;      }
+    }
+  }
+  }
+  
+}
+
+.menu_show{
+  left: 0%  !important;
+  height: 100vh;
+  transition: .4s;
+}
+
+ 
 
 
 
@@ -171,7 +209,7 @@ $ont-poppins: 'Poppins', sans-serif;
 
   .right__side {
     padding-left: calc(250px + 0px);
-    padding-top: 109px;
+    padding-top: 92px;
 
 
 

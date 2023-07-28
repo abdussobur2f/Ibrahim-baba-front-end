@@ -5,6 +5,9 @@ import './Products.scss'
 // import { VscHeart, VscSync } from 'react-icons/vsc'
 import { NavLink } from 'react-router-dom'
 import { MdArrowForwardIos } from 'react-icons/md'
+import { VscChevronRight, VscChevronLeft } from 'react-icons/vsc';
+import Slider from 'react-slick';
+
 const Products = () => {
     const [product,setProduct] = useState([])
 
@@ -29,7 +32,68 @@ const Products = () => {
     }, [])
 
 
+    // slick slider
+
+    const SampleNextArrow = ({ onClick }) => {
+
+      return (
+        <div className='arrow arrow_right' onClick={onClick} >
+          <VscChevronRight />
+        </div>
+      );
+    }
+  
+    const SamplePrevArrow = ({ onClick }) => {
+  
+      return (
+        <div className='arrow ym-btn arrow_prev' onClick={onClick}>
+          <VscChevronLeft />
+        </div>
+      );
+    }
+  
     
+  const settings = {
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+ 
+ 
+    arrows: true,
+    dots: false,
+    infinite: true,
+   
+    autoplay:false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+
+
+  };
  
 
 
@@ -42,73 +106,48 @@ const Products = () => {
 
 
       <section className="product bg-white">
-        
-      <div className="row heading_top_flas  justify-content-between align-items-center">
-              <div className="heading  col-lg-4 col-4 ">
+<div className='px-4'>
+          
+<div className="row top_heading mb-2  justify-content-between align-items-center">
+              <div className="heading  col-lg-4 col-6 ">
                 <h5 className='sub-heading'>All Categories</h5>
               </div>
-              {/* <div className="counting text-center col-lg-4 col-4">
-                <h6>End In : <span>0{hour}</span> <span>{minute}</span> <span>{second}</span></h6>
-              </div> */}
-              <div className="viwe  col-lg-4 col-4">
-                <NavLink to="/category" className=''> view <span><MdArrowForwardIos /></span></NavLink>
+        
+              <div className="viwe  col-lg-4 col-6">
+                <NavLink to="/category" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
               </div>
             </div>
+</div>
 
-<div className="row row-cols-2 row-cols-lg-6 row-cols-md-3 py-3">
+ <div className='category_item'>
+  
+<Slider {...settings}>
     {
-      
+       
+
+
         product.slice().map((elm,index)=>{
+
             return(
-              
-                <div className="card border-0 rounded-0 py-2 " key={index}>
+            
+                <div className="card border-0 rounded-0 px-0  " key={index}>
                   <img className="card-img-top rounded-0" src={elm.urls.thumb}alt="Card image cap"/>
                   <div className="card-body">
                     <p className="card-text mb-0">   {elm.alt_description.slice(0,20)}</p>
                   </div>
-              
 
-
-              {/* <div className="card__icon">
-               <span> <BsEye/></span>
-              <span> <VscHeart/></span>
-               <span><VscSync/></span>
-              </div>
-
-              <div className="cart__add">
-                <div className="btn btn-primary btn-outline">Add To Cart</div>
-              </div> */}
                         </div>
+                    
             )
         })
-    }
-    {
       
-        product.slice(6,8).map((elm,index)=>{
-            return(
-              
-                <div className="card border-0 rounded-0 py-2 " key={index}>
-                  <img className="card-img-top rounded-0" src={elm.urls.regular}alt="Card image cap"/>
-                  <div className="card-body ">
-                    <p className="card-text mb-0">   {elm.alt_description.slice(0,20)}</p>
-                  </div>
-              
-
-
-              {/* <div className="card__icon">
-               <span> <BsEye/></span>
-              <span> <VscHeart/></span>
-               <span><VscSync/></span>
-              </div>
-
-              <div className="cart__add">
-                <div className="btn btn-primary btn-outline">Add To Cart</div>
-              </div> */}
-                        </div>
-            )
-        })
+       
     }
-</div>
+      </Slider>
+    
+ 
+ </div>
+
  
 
       </section>

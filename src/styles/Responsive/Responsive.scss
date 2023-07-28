@@ -1,0 +1,140 @@
+ 
+
+
+
+
+
+  
+
+
+// side bar section
+
+ @media screen and (max-width:768px) {
+    .sidebar{
+         z-index: 100000;
+         background-color: #ffff;
+    }
+
+    .card{
+        .card-text,.card-title{
+            font-size: 13px !important;
+
+           
+        }
+       .card-body,.card-text, .rating h3 span {
+           
+            text-transform: capitalize;
+            font-size: 13px !important;
+        }
+    }
+
+    // hero 
+
+     .card-img-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        margin-bottom: 10px !important;
+    
+
+        .card-title {
+            font-size: 22px !important;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            
+       
+        }
+        .card-text{
+            margin-bottom: 10px !important;
+            text-align: center;
+        }
+         
+    }
+    // FLASH DEALS 
+
+
+
+
+
+    
+.counting {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+
+    h6 {
+        font-size: 18px !important;
+    }
+
+    span {
+        background-color: #fff;
+        padding: 1px 10px;
+        color: #000000;
+        font-size: 18px !important;
+        margin: 0 2px;
+    }
+}
+
+
+    .sub-heading {
+        font-size: 18px !important;
+        font-weight: 400;
+    
+    
+    }
+
+    
+ }
+//  speacial offer
+
+.special_product_list{
+    .bottom{
+        .content{
+            img{
+                min-height: 200px;
+                max-width: 200px;
+                margin: auto;
+              }
+             
+        &:hover{
+            border: 1px solid #7777;
+            &::before {
+              content: '';
+              top: 0;
+              left: 0;
+              opacity: .7;
+              background-color: #000;
+              width: 100%;
+              height:100% !important;
+              position: absolute;
+              cursor: pointer;
+            
+            }
+        }
+    
+           
+    }
+}
+
+ 
+//   BTN 
+.my-btn-black {
+    padding: 5px;
+
+ 
+}
+
+
+// product item cart
+
+
+
+
+  
+  
+}

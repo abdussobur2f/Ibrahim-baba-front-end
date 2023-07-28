@@ -8,6 +8,7 @@
 .Category_view {
   width: 100%;
   height: 60vh;
+  padding: 0 6px;
 }
 .Category_view .banner_item img {
   height: 60vh;
@@ -44,14 +45,14 @@
 .Category_view .arrow_right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 7px;
   transform: translate(0%, -50%);
 }
 .Category_view .arrow_prev {
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 100;
-  left: 0;
+  left: 7px;
   position: absolute;
 }
 
@@ -63,7 +64,7 @@
   overflow: hidden;
 }
 .category__product .category_container .flas_menu {
-  padding-left: 12px;
+  padding-left: 13px;
 }
 .category__product .category_container .flas_menu ul {
   display: flex;
@@ -151,7 +152,7 @@
   font-size: 15px !important;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #000;
+  color: #ffffff;
   text-align: center;
   background: var(--hover-btn-color);
   width: 100%;
@@ -160,5 +161,6 @@
 }
 .category__product .category_container .card .view_btn a:hover {
   background: #ffffff;
+  color: #000;
   box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }/*# sourceMappingURL=Category.css.map */

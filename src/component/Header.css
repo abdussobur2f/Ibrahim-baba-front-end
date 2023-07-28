@@ -1,8 +1,8 @@
 :root {
-  --primary-color:#ff3333;
-  --hover-color:#000;
-  --btn-color:linear-gradient(90deg, rgba(198,44,116,1) 0%, rgba(89,39,110,1) 100%);
-  --hover-btn-color:linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+  --primary-color: #ff3333;
+  --hover-color: #000;
+  --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+  --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
 }
 
 .header {
@@ -10,7 +10,7 @@
   padding: 15px 0;
   transition: 0.5s;
   position: fixed;
-  z-index: 99 !important;
+  z-index: 999 !important;
   width: 100%;
 }
 .header .wrapper .logo_chal_dal {
@@ -20,7 +20,7 @@
   height: auto;
 }
 .header .wrapper .logo h5 {
-  font-size: 22px !important;
+  font-size: 22px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0 !important;
   width: 100%;
@@ -112,7 +112,6 @@
 }
 .header .wrapper .profile {
   border-radius: 20px;
-  padding: 10px 15px;
 }
 .header .wrapper .profile .profile_item {
   display: flex;
@@ -129,11 +128,66 @@
   text-transform: capitalize;
   margin-bottom: 0;
 }
+.header .menu_bar {
+  font-size: 25px;
+  cursor: pointer;
+}
+.header .menu_bar:hover {
+  color: var(--primary-color);
+}
 
 .sticky {
-  z-index: 99999;
-  position: fixed;
+  z-index: 999;
   left: 0;
   right: 0;
   top: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 0;
+  }
+  .logo h5 {
+    font-size: 16px !important;
+  }
+  .header .wrapper .nav_icon {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: azure;
+    /* background-color: darkblue; */
+    gap: 4px;
+    justify-content: center;
+  }
+  .header .wrapper .profile .profile_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header .wrapper .profile .profile_item img {
+    max-width: 35px;
+    min-width: 35px;
+    margin-left: auto;
+  }
+  .header .wrapper .profile .profile_item h6 {
+    display: none;
+  }
+  .header .wrapper .input-group .form-control {
+    outline: none !important;
+    border-radius: 0 !important;
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+  .header .wrapper .input-group span {
+    background: var(--btn-color);
+    color: #ffffff;
+    border-radius: 0 !important;
+    font-size: 14px;
+    padding: 0.5rem !important;
+  }
+  .header .wrapper .nav_icon .shop_icon span a, .header .wrapper .nav_icon .notification_icon span a, .header .wrapper .nav_icon .bag_icon span a, .header .wrapper .nav_icon .heart_icon span a {
+    font-size: 25px;
+    color: #000000;
+  }
 }/*# sourceMappingURL=Header.css.map */

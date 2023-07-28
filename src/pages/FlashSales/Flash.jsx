@@ -106,7 +106,7 @@ const Flash = () => {
                     <div className="card h-100 border-0 rounded-0 p-0 m-0">
                       <img className="card-img rounded-0" src={item.urls.regular} alt="Card image" />
                       <div className="card-img-overlay text-center">
-                        <h5 className="card-title text-white ">Flas Deals Just For You 3</h5>
+                        <h5 className="card-title text-white ">Flas Deals Just For You</h5>
                         <p className="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <button className="my-btn">Shop now</button>
                       </div>
@@ -127,23 +127,23 @@ const Flash = () => {
 {/* flash menu bar */}
 
           <section className='Flas__view_page  '>
-<div className="flash_container  ">
+<div className="flash_container  px-2">
 
 
-<div className="flas_menu ">
-  <ul className='  '>
+<div className="flas_menu  ">
+  <ul className='   '>
     <li><NavLink to="/home">Home</NavLink></li>
     <li><MdKeyboardArrowRight/></li>
     <li><NavLink to="/flash">Flash Deals</NavLink></li>
 
   </ul>
 
-  <div className="counting d-flex gap-5 pt-4 ">
+  <div className="counting d-flex align-items-center justify-content-between   mt-2 top_heading px-2 ">
     <h5 className="fw-bold">Flas Deals</h5>
                     <h6 className='sub-headin ending_flash_deals mb-0'>Ends In : <span>0{hour}</span> : <span>{minute}</span> : <span>{second}</span>
                     </h6>
                    
-                    <p className='normal-font mb-0'>00:00 Tomorrow</p>
+                    <p className='sub-heading mb-0   d-block text-center '>00:00 Tomorrow</p>
                   </div>
                   <hr />
 </div>

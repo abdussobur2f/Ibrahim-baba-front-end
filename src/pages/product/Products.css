@@ -1,5 +1,37 @@
-.product .top_heading h3 {
-  color: tomato;
+.product .arrow {
+  font-size: 40px;
+  cursor: pointer;
+  background: var(--btn-color);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.product .arrow:hover {
+  background: var(--hover-btn-color);
+}
+.product .arrow_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.product .arrow_prev {
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+  left: 0;
+  position: absolute;
+}
+.product .slick-dots {
+  bottom: -28px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: sticky;
 }
 .product .card {
   position: relative;
@@ -87,4 +119,7 @@
 }
 .product .card .card__icon span svg:hover {
   background-color: rgb(13, 110, 253);
+}
+.product .category_item {
+  padding: 0 13px;
 }/*# sourceMappingURL=Products.css.map */

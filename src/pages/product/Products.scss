@@ -1,15 +1,61 @@
 $ont-montes: 'Montserrat', sans-serif;
 
-$ont-poppins: 'Poppins', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
 
+
+@mixin arrow_slider {
+
+    .arrow {
+      font-size: 40px;
+      cursor: pointer;
+      background: var(--btn-color);
+      color: #fff;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0px;
+  
+      &:hover {
+        background: var(--hover-btn-color);
+      }
+  
+    }
+  
+    .arrow_right {
+  
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0%, -50%);
+    }
+  
+    .arrow_prev {
+  
+      top: 50%;
+      transform: translate(0%, -50%);
+  
+      z-index: 1;
+      left: 0;
+      position: absolute;
+  
+    }
+    .slick-dots {
+      bottom: -28px;
+      width: 100%;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      position: sticky;
+    }
+  }
+  
+ 
 
 .product {
 
-    .top_heading {
-        h3 {
-            color: tomato;
-        }
-    }
+ 
+    @include arrow_slider();
 
     .card {
         position: relative;
@@ -60,7 +106,8 @@ $ont-poppins: 'Poppins', sans-serif;
             background-color: #f5f5f5;
 
         }
-
+      
+        
         &:hover .cart__add {
 
             position: absolute;
@@ -141,4 +188,11 @@ $ont-poppins: 'Poppins', sans-serif;
 
         }
     }
+
+    .category_item{
+        padding: 0 13px;
+    }
 }
+
+// .zoom images
+

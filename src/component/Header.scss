@@ -1,39 +1,42 @@
 $ont-montes: 'Montserrat', sans-serif;
 
 $ont-poppins: 'Poppins', sans-serif;
-:root{
-    --primary-color:#ff3333;
-    --hover-color:#000;
-    --btn-color :linear-gradient(90deg, rgba(198,44,116,1) 0%, rgba(89,39,110,1) 100%);
-    --hover-btn-color:linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
-   
-   
-  }
+
+:root {
+    --primary-color: #ff3333;
+    --hover-color: #000;
+    --btn-color: linear-gradient(90deg, rgba(198, 44, 116, 1) 0%, rgba(89, 39, 110, 1) 100%);
+    --hover-btn-color: linear-gradient(90deg, rgb(214, 23, 112) 0%, rgb(121, 23, 163) 100%);
+
+
+}
+
 .header {
     background-color: #ffffff;
     padding: 15px 0;
     transition: .5s;
     position: fixed;
-    z-index: 99 !important;
+    z-index: 999 !important;
     width: 100%;
 
 
     .wrapper {
-.logo_chal_dal{
-    width: 30px;
-     object-fit: cover;
- 
-    height: auto;
-}
+        .logo_chal_dal {
+            width: 30px;
+            object-fit: cover;
+
+            height: auto;
+        }
+
         .logo {
             h5 {
-                font-size: 22px !important;
+                font-size: 22px;
                 font-family: $ont-montes;
                 margin-bottom: 0 !important;
-              
+
                 width: 100%;
                 font-weight: 600;
-                
+
             }
         }
 
@@ -47,25 +50,27 @@ $ont-poppins: 'Poppins', sans-serif;
 
 
         .input-group {
-            
-box-shadow:  0px 2px -20px 30px;
+
+            box-shadow: 0px 2px -20px 30px;
+
             .form-control {
                 outline: none !important;
-             border-radius: 0 !important;
+                border-radius: 0 !important;
                 padding: 11px 10px;
                 font-size: 18px;
             }
-      
-            span{
+
+            span {
                 background: var(--btn-color);
                 color: #ffffff;
                 border-radius: 0 !important;
-           font-size: 18px;
-                &:hover{
-                   background: var(--hover-btn-color);
-                   cursor: pointer;
+                font-size: 18px;
+
+                &:hover {
+                    background: var(--hover-btn-color);
+                    cursor: pointer;
                 }
-              }
+            }
 
             .form-control:focus {
                 outline: none !important;
@@ -76,129 +81,201 @@ box-shadow:  0px 2px -20px 30px;
 
 
 
-     
 
 
-            .nav_icon {
-                display: flex;
-           
-                align-items: center;
-               margin-left: auto;
-                flex-wrap: wrap;
-           
 
-                .shop_icon,
-                .notification_icon,
-                .bag_icon,
-                .heart_icon {
-                    position: relative;
-                         span{
-                           a{
-                            font-size: 30px;
-                            color: #000000;
-                 
-                            &:hover  {
-                                transition: .3s !important;
-                          
-                                 color: var(--primary-color);
-                            }
-                            }
-                            
-                         }
-                    .countNm {
-                        text-align: center;
+        .nav_icon {
+            display: flex;
 
-                        position: absolute;
-                        right: -5px;
-                        top: 0px;
-                        z-index: 100;
+            align-items: center;
+            margin-left: auto;
+            flex-wrap: wrap;
 
-                        span {
-                            background-color: tomato;
-                            border-radius: 50%;
-                            font-size: 12px !important;
-                            width: 18px;
-                            height: 18px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            color: #FFF;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                            font-weight: 300;
+
+            .shop_icon,
+            .notification_icon,
+            .bag_icon,
+            .heart_icon {
+                position: relative;
+
+                span {
+                    a {
+                        font-size: 30px;
+                        color: #000000;
+
+                        &:hover {
+                            transition: .3s !important;
+
+                            color: var(--primary-color);
                         }
-
                     }
+
+                }
+
+                .countNm {
+                    text-align: center;
+
+                    position: absolute;
+                    right: -5px;
+                    top: 0px;
+                    z-index: 100;
 
                     span {
-                        font-size: 28px;
-                        font-weight: 500;
-                        position: relative;
-
+                        background-color: tomato;
+                        border-radius: 50%;
+                        font-size: 12px !important;
+                        width: 18px;
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #FFF;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        font-weight: 300;
                     }
-                }
-    }
-
-
-            .profile {
-                 
-              
-                border-radius: 20px;
-           
-            
-                padding: 10px 15px;
-
-                .profile_item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                 
-                   
-              
-                    
- 
-
-
-
-                    
 
                 }
 
-                img {
-                    width: 40px;
-                    height: auto;
-                    object-fit: cover;
+                span {
+                    font-size: 28px;
+                    font-weight: 500;
+                    position: relative;
 
                 }
+            }
+        }
 
-                h6 {
-                    text-transform: capitalize;
 
-                    margin-bottom: 0;
-                }
+        .profile {
+
+
+            border-radius: 20px;
+
+
+
+            .profile_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+
+
+
+
+
+
+
+
+            }
+
+            img {
+                width: 40px;
+                height: auto;
+                object-fit: cover;
+
+            }
+
+            h6 {
+                text-transform: capitalize;
+
+                margin-bottom: 0;
             }
         }
     }
 
-    .sticky{
-        z-index: 99999;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
+    //  cart add section end
 
+    // menu responsive
+
+    .menu_bar{
+        font-size: 25px;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--primary-color);
+           
+        }
     }
+
  
-@media screen and (max-width:1200px) {
-   
-    
+        
+      
+       
+}
+ 
+
+.sticky {
+    z-index: 999;
+ 
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
+
+@media screen and (max-width:768px) {
+    .header{
+        padding: 5px 0;
+    }
+  
+    .logo{
+       h5{
+        font-size: 16px !important;
+       }
+    }
+
+    .header .wrapper .nav_icon {
+        display: flex;
+        align-items: center;
+        // margin: auto;
+       flex-wrap: nowrap; 
+        background: azure;
+        /* background-color: darkblue; */
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .header .wrapper .profile .profile_item {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    img{
+        max-width:35px;
+        min-width: 35px;
+        margin-left: auto;
+    }
+        h6{
+            display: none ;
+        }
+    }
+
+    .header .wrapper .input-group .form-control {
+        outline: none !important;
+        border-radius: 0 !important;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    .header .wrapper .input-group span {
+        background: var(--btn-color);
+        color: #ffffff;
+        border-radius: 0 !important;
+        font-size: 14px;
+        padding:  0.5rem   !important;
+    }
+    .header .wrapper .nav_icon .shop_icon span a, .header .wrapper .nav_icon .notification_icon span a, .header .wrapper .nav_icon .bag_icon span a, .header .wrapper .nav_icon .heart_icon span a {
+        font-size: 25px;
+        color: #000000;
+    }
+}
+
 // @media screen and (max-width:400px) {
 //  .img_head{
 //     display: none;
 //  }
- 
+
 //  .nav_icon{
 //     display: none !important;
 //  }
@@ -210,5 +287,3 @@ box-shadow:  0px 2px -20px 30px;
 //  }
 
 // }
-
- 

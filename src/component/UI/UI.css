@@ -25,7 +25,8 @@
   text-transform: capitalize;
 }
 .speacial_products .special_item .card .card-body img {
-  height: 130px !important;
+  min-height: 140px !important;
+  max-height: 140px !important;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -57,7 +58,7 @@
 .speacial_products .arrow_right {
   position: absolute;
   top: 50%;
-  right: 4px !important;
+  right: 8px !important;
   transform: translate(0%, -50%);
 }
 .speacial_products .arrow_prev {

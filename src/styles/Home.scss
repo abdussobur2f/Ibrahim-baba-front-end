@@ -1,6 +1,6 @@
-$ont-nunito: 'Nunito Sans', sans-serif;
+$font-nunito: 'Nunito Sans', sans-serif;
 
-$ont-poppins: 'Poppins', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
 
 :root {
   --primary-color: #ff3333;
@@ -48,12 +48,19 @@ $ont-poppins: 'Poppins', sans-serif;
     position: absolute;
 
   }
+  .slick-dots {
+    bottom: -28px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    position: sticky;
+  }
 }
 
 @mixin card_design {
   .card {
-    min-height: 290px;
-    max-height: 280px;
+     height: fit-content;
     position: relative;
 
     border: none !important;
@@ -65,7 +72,7 @@ $ont-poppins: 'Poppins', sans-serif;
 
     &:hover .hover_card {
       opacity: 1;
-      z-index: 1000;
+      z-index: 10;
 
     }
 
@@ -106,7 +113,7 @@ $ont-poppins: 'Poppins', sans-serif;
       .card-title {
         font-size: 15px;
         font-weight: 500;
-        font-family: $ont-poppins;
+        font-family: $font-poppins;
 
         &::first-letter {
           text-transform: uppercase;
@@ -116,7 +123,7 @@ $ont-poppins: 'Poppins', sans-serif;
 
       .card-text {
         font-size: 15px;
-        font-family: $ont-poppins !important;
+        font-family: $font-poppins !important;
         font-weight: 400;
 
         .rating {
@@ -130,7 +137,7 @@ $ont-poppins: 'Poppins', sans-serif;
           }
 
           h3 {
-            font-family: $ont-poppins;
+            font-family: $font-poppins;
             font-weight: 500;
             font-size: 15px;
 
@@ -179,8 +186,8 @@ $ont-poppins: 'Poppins', sans-serif;
       box-shadow: inset rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       border: .7px solid #7777;
 
-    
-    
+
+
 
 
 
@@ -224,7 +231,7 @@ $ont-poppins: 'Poppins', sans-serif;
         color: #000000;
         font-size: 15px;
         font-weight: 400;
-        font-family: $ont-nunito;
+        font-family: $font-nunito;
         box-shadow: 0px 0px 47px -48px !important;
         background: transparent !important;
 
@@ -250,7 +257,7 @@ $ont-poppins: 'Poppins', sans-serif;
     }
 
 
- 
+
 
   }
 
@@ -289,7 +296,7 @@ $ont-poppins: 'Poppins', sans-serif;
 .hero_section {
   width: 100%;
   height: 60vh;
-overflow: hidden;
+  overflow: hidden;
 
   background-color: darkblue;
 
@@ -310,8 +317,8 @@ overflow: hidden;
         transform: translate(-50%, -50%);
 
         .card-title {
-          font-size: 35px !important;
-          font-family: $ont-nunito;
+          font-size: 35px;
+          font-family: $font-nunito;
           font-weight: 600;
           margin-bottom: 20px;
 
@@ -333,14 +340,14 @@ overflow: hidden;
       font-size: 50px;
       width: 90%;
       color: #fff;
-      font-family: $ont-nunito;
+      font-family: $font-nunito;
 
 
     }
 
     p {
       font-size: 15px;
-      font-family: $ont-nunito;
+      font-family: $font-nunito;
       font-weight: 400;
     }
   }
@@ -361,12 +368,12 @@ overflow: hidden;
 .flasDeails {
 
 
-  font-family: $ont-nunito;
+  font-family: $font-nunito;
 
 
   @include card_design;
 
-   
+
 
 }
 
@@ -392,4 +399,157 @@ overflow: hidden;
   background-color: #777;
 }
 
- 
+
+
+
+
+
+
+//  cart add section
+
+
+.cart_container {
+  .top_heading_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #7777;
+    .close {
+
+      
+      font-size: 30px !important;
+      font-weight: 700;
+      cursor: pointer;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      
+
+    }
+
+  }
+
+  .cart_body {
+    background-color: #f5f5f5;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .cart_images {
+    img {
+      min-height: 120px;
+      max-height: 120px;
+      object-fit: cover;
+    }
+  }
+
+  .cart_desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+
+  .cout_product {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  
+    margin-bottom: 15px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+
+    .incrment_btn {
+      display: flex;
+      align-items: center;
+
+
+      button {
+        border: 1px solid rgba(119, 119, 119, 0.4666666667) !important;
+        font-size: 19px;
+        outline: none !important;
+        background: transparent;
+        padding: 0 8px;
+
+        &:nth-child(2) {
+          border-top: 1px solid #7777 !important;
+          border-bottom: 1px solid #7777 !important;
+
+
+        }
+
+        &:nth-child(1) {
+          &:hover {
+            background-color: var(--primary-color);
+          }
+        }
+
+        &:nth-child(3) {
+          &:hover {
+            background-color: var(--primary-color);
+          }
+        }
+
+      }
+    }
+
+    .point {
+
+
+      h4 {
+        font-family: $font-poppins;
+        font-size: 18px !important;
+        font-weight: 500;
+
+        span {
+          color: var(--primary-color);
+          font-weight: 500;
+          font-size: 16px !important;
+        }
+      }
+    }
+
+  
+  }
+  .price {
+    span {
+      font-size: 20px;
+      font-family: $font-nunito;
+      font-weight: 600;
+    }
+  }
+
+.total_amount{
+  border-top: 1px solid #7777;
+  margin: 10px;
+  padding-top: 10px;
+ .subtotal,.total{
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-transform: capitalize;
+margin-bottom: 10px;
+
+
+h3{
+  font-size: 22px;
+  font-family: $font-nunito;
+  font-weight: 500;
+}
+
+span{
+  font-size: 18px;
+  font-family: $font-nunito;
+  font-weight: 600;
+}
+ }
+}
+
+
+
+}

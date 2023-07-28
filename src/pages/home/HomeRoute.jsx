@@ -1,8 +1,6 @@
 
 //  note this is home page create name mistake that's page name home Route sorry 
 
-
-
 import React, { useState, useEffect } from 'react'
 import Slider from "react-slick";
 import '../../styles/Home.scss'
@@ -14,13 +12,11 @@ import Products from '../product/Products';
 import SpeacialCategories from '../../component/UI/SpeacialCategories';
 import axios from 'axios';
 import { FaHeart } from 'react-icons/fa'
+import '../../styles/Responsive/Responsive.scss'
 
 // poppup
-import { Button } from 'react-bootstrap'
 
-import Modal from 'react-modal';
 import ModalContent from '../../component/ProductDisplay/ModalContent';
-import ProductDisplay from '../../component/ProductDisplay/ProductDisplay';
 
 const HomeRoute = () => {
 
@@ -29,13 +25,10 @@ const HomeRoute = () => {
   const [minute, setMinute] = useState(0)
   const [second, setSecond] = useState(0);
 
-
   const [update, setUpdate] = useState(0)
   const [love, setLove] = useState(false)
 
-
-
-
+  const [modalShow, setModalShow] = React.useState(false);
 
 
   const showMore = () => {
@@ -91,7 +84,7 @@ const HomeRoute = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     arrows: true,
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -100,8 +93,6 @@ const HomeRoute = () => {
     speed: 300,
 
   };
-
-
 
 
   const getData = async () => {
@@ -127,15 +118,12 @@ const HomeRoute = () => {
     setLove(!love)
 
   }
-
  
   // popup
-
-
-
+ 
   return (
     <>
-      <section className="hero_section mb-3 w-100">
+      <section className="hero_section mb-3 p-0 w-100">
         <div className="hero_section">
 
 
@@ -150,8 +138,8 @@ const HomeRoute = () => {
                       <div className="card h-100 border-0 rounded-0 p-0 m-0">
                         <img className="card-img rounded-0" src={item.urls.regular} alt="Card image" />
                         <div className="card-img-overlay text-center">
-                          <h5 className="card-title text-white ">Flas Deals Just For You 3</h5>
-                          <p className="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 className="card-title text-white ">Find You Product And Buy Now</h5>
+                          <p className="card-text text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non aliquam placeat.</p>
                           <button className="my-btn">Shop now</button>
                         </div>
                       </div>
@@ -171,26 +159,28 @@ const HomeRoute = () => {
 
 
       <section className='flasDeails p-3'>
-        <div className="row heading_top_flas  justify-content-between align-items-center">
-          <div className="heading  col-lg-4 col-4 ">
-            <h5 className='sub-heading'>Flash Deals</h5>
-          </div>
-          <div className="counting text-center col-lg-4 col-4">
-            <h6>End In : <span>0{hour}</span> <span>{minute}</span> <span>{second}</span></h6>
-          </div>
-          <div className="viwe  col-lg-4 col-4">
-            <NavLink to="/flash" className=''> view <span><MdArrowForwardIos /></span></NavLink>
+        <div className="row px-2">
+          <div className="top_heading  flex-wrap d-flex   justify-content-between align-items-center">
+            <div className="heading  col-lg-4 col-6 ">
+              <h5 className='sub-heading'>Flash Deals</h5>
+            </div>
+            <div className="counting  text-center col-lg-4 col-12 order-md-0 order-lg-0 order-3 order-lg-0 ">
+              <h6 className='m-auto  mt-3 mt-lg-0 mt-md-0'>End In : <span>0{hour}</span> <span>{minute}</span> <span>{second}</span></h6>
+            </div>
+            <div className="viwe  col-lg-4 col-6  ">
+              <NavLink to="/flash" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+            </div>
           </div>
         </div>
 
 
-        <div className="row row-cols-lg-5 row-cols-md-3 product_list    ">
+        <div className="row row-cols-lg-5 row-cols-md-3 product_list  ">
 
 
           {
             product.slice(0, 5).map((item) => {
               return (
-                <div className="col-6 mt-3 px-2 mb-5">
+                <div className="col-6 mt-3 mb-5 px-2">
 
                   <div className="card border-1  rounded-0" key={item.id}>
                     <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
@@ -210,8 +200,9 @@ const HomeRoute = () => {
                         </div>
                       </div>
                       <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
+                        <button onClick={() => setModalShow(true)}>Details</button>
 
-                        <button><ProductDisplay /> </button>
+
 
 
                       </div>
@@ -253,19 +244,21 @@ const HomeRoute = () => {
 
 
 
-      <section className='Categories p-4'>
+      <section className='Categories'>
         <Products />
       </section>
 
 
       <section className="latest_products p-3">
-        <div className="row heading_top_flas  justify-content-between align-items-center">
-          <div className="heading  col-lg-4 col-4 ">
-            <h5 className='sub-heading'>Latest Product</h5>
-          </div>
+        <div className="row px-2">
+          <div className="top_heading  d-flex   justify-content-between align-items-center">
+            <div className="heading  col-lg-4 col-6">
+              <h5 className='sub-heading'> Lates Products</h5>
+            </div>
 
-          <div className="viwe  col-lg-4 col-4">
-            <NavLink to="/latestProduct" className=''> view <span><MdArrowForwardIos /></span></NavLink>
+            <div className="viwe  col-lg-4 col-6">
+              <NavLink to="/latestProduct" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+            </div>
           </div>
         </div>
 
@@ -283,7 +276,7 @@ const HomeRoute = () => {
 
                     {/*  body contenrt start */}
                     <div className="card-body ">
-                      <p className='card-title'>{item.alt_description.slice(0, 15)}....</p>
+                      <p className='card-title'>{item.alt_description.slice(0, 15)} Lorem ipsum dolor....</p>
                       <div className="card-text">
 
                         <div className="rating d-flex align-items-center justify-content-between">
@@ -297,7 +290,7 @@ const HomeRoute = () => {
                       </div>
                       <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
 
-                        <button>deatails</button>
+                        <button onClick={() => setModalShow(true)}>deatails</button>
 
                       </div>
                     </div>
@@ -336,18 +329,20 @@ const HomeRoute = () => {
       </section>
 
       <section className="just_for__you p-3">
-        <div className="row heading_top_flas  justify-content-between align-items-center">
-          <div className="heading  col-lg-4 col-4 ">
-            <h5 className='sub-heading'>Just For You</h5>
-          </div>
+        <div className="row px-2">
+          <div className="top_heading  d-flex   justify-content-between align-items-center">
+            <div className="heading  col-lg-4 col-4 ">
+              <h5 className='sub-heading'>Just For You</h5>
+            </div>
 
-          <div className="viwe  col-lg-4 col-4">
-            <NavLink to="/latestProduct" className=' '> view <span><MdArrowForwardIos /></span></NavLink>
+            <div className="viwe  col-lg-4 col-4">
+              <NavLink to="/flash" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+            </div>
           </div>
         </div>
 
 
-        <div className="row row-cols-lg-5 row-cols-md-3 product_list    ">
+        <div className="row row-cols-lg-5 row-cols-md-3 product_list">
 
 
           {
@@ -477,10 +472,20 @@ const HomeRoute = () => {
 
 
       <section className="popup">
+        <div>
 
+          <ModalContent
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          /> </div>
       </section>
+
+
+
+
     </>
+
   )
 }
 
-export default HomeRoute
+export default HomeRoute;
