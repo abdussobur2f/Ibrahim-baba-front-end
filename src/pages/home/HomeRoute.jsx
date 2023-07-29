@@ -168,7 +168,7 @@ const HomeRoute = () => {
               <h6 className='m-auto  mt-3 mt-lg-0 mt-md-0'>End In : <span>0{hour}</span> <span>{minute}</span> <span>{second}</span></h6>
             </div>
             <div className="viwe  col-lg-4 col-6  ">
-              <NavLink to="/flash" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+              <NavLink to="/flash" className=''> view <span className='d-none d-md-inline-block d-lg-inline-block'><MdArrowForwardIos /></span></NavLink>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ const HomeRoute = () => {
             </div>
 
             <div className="viwe  col-lg-4 col-6">
-              <NavLink to="/latestProduct" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+              <NavLink to="/latestProduct" className=''> view <span className='d-none d-md-inline-block d-lg-inline-block'><MdArrowForwardIos /></span></NavLink>
             </div>
           </div>
         </div>
@@ -336,7 +336,7 @@ const HomeRoute = () => {
             </div>
 
             <div className="viwe  col-lg-4 col-4">
-              <NavLink to="/flash" className=''> view <span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+              <NavLink to="/flash" className=''> view <span className='d-none d-md-inline-block d-lg-inline-block'><MdArrowForwardIos /></span></NavLink>
             </div>
           </div>
         </div>

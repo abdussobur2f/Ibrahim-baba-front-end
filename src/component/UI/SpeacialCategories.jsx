@@ -103,7 +103,7 @@ const SpeacialCategories = () => {
 
 
             <div className="viwe  col-lg-4 col-6">
-              <NavLink className='' to="/Offer"> view<span className='d-none d-md-block d-lg-block'><MdArrowForwardIos /></span></NavLink>
+              <NavLink className='' to="/Offer"> view <span className='d-none d-md-inline-block d-lg-inline-block'><MdArrowForwardIos /></span></NavLink>
             </div>
 
           </div>

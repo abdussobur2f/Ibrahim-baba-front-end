@@ -15,6 +15,7 @@
         alt: 'Wristwatch by Ted Baker London',
         isFluidWidth: true,
         src: images,
+        height:500,
         
     },
     largeImage: {

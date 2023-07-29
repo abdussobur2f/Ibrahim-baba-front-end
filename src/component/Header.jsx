@@ -46,8 +46,8 @@ const Header = ( {sidebarShow}) => {
 
 
 
-                    <div className="wrapper d-flex align-items-center ">
-                        <div className="row  gap-2 gap-md-0 gap-lg-0 align-items-center position-relative ">
+                    <div className="wrapper d-flex align-items-center">
+                        <div className="row  w-100 gap-2 gap-md-0 gap-lg-0 align-items-center position-relative ">
 
                             {/* 2 */}
 <div className="col-2 d-lg-none d-md-none d-block">
