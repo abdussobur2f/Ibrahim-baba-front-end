@@ -184,13 +184,12 @@ p {
 
     text-transform: capitalize;
     font-family: $ont-poppins;
-    font-size: 16px;
+   
     font-weight: 400;
     border: 1px solid #7777;
     color: black;
     font-size: 15px;
-    padding: 5px 10px;
-    font-weight: 600;
+ 
 
 
     &:hover {
@@ -206,4 +205,73 @@ p {
     outline: none !important;
     box-shadow: none !important;
 
+}
+@media screen and  (max-width:768px) {
+
+    .normal-font {
+        font-size: 13px;
+        font-family: $ont-poppins;
+        font-weight: 400;
+    
+    }
+    
+.sub-heading {
+    font-size: 16px !important;
+    font-weight: 500;
+
+
+    font-family: $ont-nunito;
+
+}
+
+    .my-btn {
+        padding: 5px;
+        background: var(--btn-color);
+        outline: none;
+        border: none;
+        color: #fff;
+        font-family: $ont-nunito;
+        font-size: 13px;
+    
+        &:hover {
+            background: var(--hover-btn-color);
+        }
+    
+    }
+    .my-btn-black {
+        padding: 5px;
+    
+        outline: none;
+    
+        text-transform: capitalize;
+        font-family: $ont-poppins;
+    
+        font-weight: 400;
+        border: 1px solid #7777;
+        color: black;
+        font-size: 13px;
+   
+    
+    
+    
+        &:hover {
+            background: var(--hover-btn-color);
+            color: #ffffff;
+            cursor: pointer;
+    
+        }
+    
+    }
+
+
+    .viwe a {
+        cursor: pointer;
+        transition: 0.3s !important;
+        color: #ffffff !important;
+        background: var(--hover-btn-color);
+        padding: 3px 10px;
+        font-size: 15px !important;
+        text-transform: capitalize;
+    }
+    
 }

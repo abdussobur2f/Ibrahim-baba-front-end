@@ -120,7 +120,7 @@ $font-poppins: 'Poppins', sans-serif;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+   
       border: 1px solid #7777;
 
       .form-control {
@@ -283,9 +283,13 @@ $font-poppins: 'Poppins', sans-serif;
         }
       
       .total_amount{
-       
-        margin: 10px;
-        padding-top: 10px;
+      
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid #7777;
+      overflow: hidden;
+      border-radius: 20px;
+      
        .subtotal,.total{
       display: flex;
       align-items: center;

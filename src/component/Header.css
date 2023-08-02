@@ -7,7 +7,7 @@
 
 .header {
   background-color: #ffffff;
-  padding: 15px 0;
+  padding: 10px 0;
   transition: 0.5s;
   position: fixed;
   z-index: 999 !important;
@@ -26,26 +26,29 @@
   width: 100%;
   font-weight: 600;
 }
-.header .wrapper .input-group {
+.header .wrapper .input_item {
+  margin: 0 auto;
+}
+.header .wrapper .input_item .input-group {
   box-shadow: 0px 2px -20px 30px;
 }
-.header .wrapper .input-group .form-control {
+.header .wrapper .input_item .input-group .form-control {
   outline: none !important;
   border-radius: 0 !important;
   padding: 11px 10px;
   font-size: 18px;
 }
-.header .wrapper .input-group span {
+.header .wrapper .input_item .input-group span {
   background: var(--btn-color);
   color: #ffffff;
   border-radius: 0 !important;
   font-size: 18px;
 }
-.header .wrapper .input-group span:hover {
+.header .wrapper .input_item .input-group span:hover {
   background: var(--hover-btn-color);
   cursor: pointer;
 }
-.header .wrapper .input-group .form-control:focus {
+.header .wrapper .input_item .input-group .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
 }
@@ -144,6 +147,25 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .wrapper .input_item .input-group .form-control {
+    outline: none !important;
+    border-radius: 0 !important;
+    padding: 0px 9px !important;
+    font-size: 14px !important;
+  }
+  .header .wrapper .input_item .input-group span {
+    background: var(--btn-color);
+    color: #ffffff;
+    border-radius: 0 !important;
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     padding: 5px 0;

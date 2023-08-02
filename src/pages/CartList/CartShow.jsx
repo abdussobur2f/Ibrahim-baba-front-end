@@ -16,7 +16,7 @@ const CartShow = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <div className="cart_container p-2">
+        <div className="cart_container p-2 ">
           <div className="top_heading_cart">
 
             <h5 className="heading">Your Shopping Cart</h5>
@@ -36,11 +36,11 @@ const CartShow = (props) => {
               </div>
               <div className="col-lg-10 col-md-12">
 
-                <div className="cart_desc">
+                <div className="cart_desc ">
                   <div>
                     <div className="title_cart mb-2">
-                      <h4 className=''>Tomato </h4>
-                      <p className=' p-0 m-0   '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta adipisci error veritatis ab aliquid    .</p>
+                      <h4 className='sub-heading'>Tomato </h4>
+                      <p className=' p-0 m-0  normal-font  '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta adipisci error veritatis ab aliquid    .</p>
                     </div>
 
                     <div className="cout_product ">

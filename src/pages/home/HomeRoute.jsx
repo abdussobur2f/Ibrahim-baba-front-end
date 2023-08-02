@@ -90,7 +90,7 @@ const HomeRoute = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 300,
+   
 
   };
 
@@ -136,7 +136,7 @@ const HomeRoute = () => {
                   <div>
                     <div className="slider_item">
                       <div className="card h-100 border-0 rounded-0 p-0 m-0">
-                        <img className="card-img rounded-0" src={item.urls.regular} alt="Card image" />
+                        <img className="rounded-0"  src={item.urls.regular} alt="Card" />
                         <div className="card-img-overlay text-center">
                           <h5 className="card-title text-white ">Find You Product And Buy Now</h5>
                           <p className="card-text text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non aliquam placeat.</p>

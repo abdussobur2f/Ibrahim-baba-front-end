@@ -130,13 +130,10 @@ p {
   outline: none;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   font-weight: 400;
   border: 1px solid rgba(119, 119, 119, 0.4666666667);
   color: black;
   font-size: 15px;
-  padding: 5px 10px;
-  font-weight: 600;
 }
 .my-btn-black:hover {
   background: var(--hover-btn-color);
@@ -147,4 +144,53 @@ p {
 .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .normal-font {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  .sub-heading {
+    font-size: 16px !important;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .my-btn {
+    padding: 5px;
+    background: var(--btn-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+  }
+  .my-btn:hover {
+    background: var(--hover-btn-color);
+  }
+  .my-btn-black {
+    padding: 5px;
+    outline: none;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border: 1px solid rgba(119, 119, 119, 0.4666666667);
+    color: black;
+    font-size: 13px;
+  }
+  .my-btn-black:hover {
+    background: var(--hover-btn-color);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .viwe a {
+    cursor: pointer;
+    transition: 0.3s !important;
+    color: #ffffff !important;
+    background: var(--hover-btn-color);
+    padding: 3px 10px;
+    font-size: 15px !important;
+    text-transform: capitalize;
+  }
 }/*# sourceMappingURL=Main.css.map */

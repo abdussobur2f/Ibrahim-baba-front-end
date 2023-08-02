@@ -70,13 +70,13 @@ const CheakOut = () => {
                     <div className="home_delivery">
 
 
-                      <input type="checkbox" name="" id="" />
+                      <input type="radio" name="" id="" />
                       <p><span className='fw-bold'>Home</span> (All Day Delivery)</p>
                     </div>
                     <div className="office">
 
 
-                      <input type="checkbox" name="" id="" />
+                      <input type="radio" name="" id="" />
                       <p> <span className='fw-bold'>Office</span> (Delivery 9 AM - 5 PM)</p>
                     </div>
 
@@ -93,19 +93,19 @@ const CheakOut = () => {
                 <div className="online_payment">
 
 
-<input type="checkbox" name="" id="" />
+<input type="radio" name="cash" id="" />
 <p> Online Payment</p>
 </div>
 <div className="cash_on">
 
 
-<input type="checkbox" name="" id="" />
+<input type="radio" name="cash" id="" />
 <p>Cash On Delivery</p>
 </div>
 <div className="pos_delivery">
 
 
-<input type="checkbox" name="" id="" />
+<input type="radio" name="cash" id="" />
 <p> Pos Delivery</p>
 </div>
                 </div>
@@ -147,8 +147,8 @@ const CheakOut = () => {
   <div className="cart_desc ">
     <div>
       <div className="title_cart mb-2">
-        <h4 className=''>Tomato </h4>
-        <p className=' p-0 m-0   '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta     .</p>
+        <h4 className='sub-heading'>Tomato </h4>
+        <p className=' p-0 m-0  normal-font '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta     .</p>
       </div>
 
       <div className="cout_product ">
@@ -182,100 +182,8 @@ const CheakOut = () => {
 
 </div>
 </div>
-<div className="cart_body mb-2 ">
-<div className="row align-items-center">
-<div className="col-lg-2 col-md-12">
-  <div className="cart_images">
-    <img src={img3} alt="" className="img-fluid" />
-  </div>
-</div>
-<div className="col-lg-10 col-md-12">
-
-  <div className="cart_desc ">
-    <div>
-      <div className="title_cart mb-2">
-        <h4 className=''>Tomato </h4>
-        <p className=' p-0 m-0   '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta     .</p>
-      </div>
-
-      <div className="cout_product ">
-        <div className="incrment_btn ">
-          <button className="m-0 "><BiPlus /></button>
-          <button className='mb-0'>8</button>
-          <button className="m-0 mines"><BiMinus /> </button>
-        </div>
-        <div className="point">
-          <h4>Point : <span>3.5098</span></h4>
-        </div>
-
-
-      </div>
-
-      <div className="price ">
-        <span>৳ 30.9</span>
-      </div>
-    </div>
-
-
-
-    <div className="delet_cart my-btn-black">
-      <span><VscTrash className=' fs-3' /></span>
-    </div>
-
-
-  </div>
-
-</div>
-
-</div>
-</div>
-<div className="cart_body mb-2 ">
-<div className="row align-items-center">
-<div className="col-lg-2 col-md-12">
-  <div className="cart_images">
-    <img src={img3} alt="" className="img-fluid" />
-  </div>
-</div>
-<div className="col-lg-10 col-md-12">
-
-  <div className="cart_desc ">
-    <div>
-      <div className="title_cart mb-2">
-        <h4 className=''>Tomato </h4>
-        <p className=' p-0 m-0   '> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur laudantium veniam dicta     .</p>
-      </div>
-
-      <div className="cout_product ">
-        <div className="incrment_btn ">
-          <button className="m-0 "><BiPlus /></button>
-          <button className='mb-0'>8</button>
-          <button className="m-0 mines"><BiMinus /> </button>
-        </div>
-        <div className="point">
-          <h4>Point : <span>3.5098</span></h4>
-        </div>
-
-
-      </div>
-
-      <div className="price ">
-        <span>৳ 30.9</span>
-      </div>
-    </div>
-
-
-
-    <div className="delet_cart my-btn-black">
-      <span><VscTrash className=' fs-3' /></span>
-    </div>
-
-
-  </div>
-
-</div>
-
-</div>
-</div>
+ 
+ 
 
 <div className="total_amount px-4">
 <div className="subtotal">

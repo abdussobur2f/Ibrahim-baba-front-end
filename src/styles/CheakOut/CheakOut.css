@@ -85,7 +85,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   border: 1px solid rgba(119, 119, 119, 0.4666666667);
 }
 .cheakOut .container__cheak .copun .form-control {
@@ -198,7 +197,10 @@
 }
 .cheakOut .container__cheak .order_summery .order_container .total_amount {
   margin: 10px;
-  padding-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(119, 119, 119, 0.4666666667);
+  overflow: hidden;
+  border-radius: 20px;
 }
 .cheakOut .container__cheak .order_summery .order_container .total_amount .subtotal, .cheakOut .container__cheak .order_summery .order_container .total_amount .total {
   display: flex;

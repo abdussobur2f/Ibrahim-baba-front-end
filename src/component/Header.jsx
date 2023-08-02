@@ -3,7 +3,7 @@ import './Header.scss'
 import logo from '../images/ff.png'
 import logo1 from '../images/photo_2023-07-04_06-57-34.jpg'
 import profile from '../images/3135715.png'
-import { VscBell, VscHeart, VscSearch } from 'react-icons/vsc'
+import {  VscHeart} from 'react-icons/vsc'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { BsSearch } from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
@@ -41,17 +41,18 @@ const Header = ( {sidebarShow}) => {
     return (
 
         <>
-            <header className={show ? "sticky header" : "header"}>
-                <div className="container-fluid px-2">
+             <header className= {show ? "sticky header" : "header"}>
+               
 
 
 
-                    <div className="wrapper d-flex align-items-center">
-                        <div className="row  w-100 gap-2 gap-md-0 gap-lg-0 align-items-center position-relative ">
+                    <div className=" container-lg-fluid px-1 container-md-fluid container-xxl-fluid w-100 d-flex align-items-center ">
+                        <div className="row  m-lg-auto m-md-auto align-items-center wrapper gap-0 gap-md-0 gap-lg-0 align-items-center position-relative ">
 
                             {/* 2 */}
+
 <div className="col-2 d-lg-none d-md-none d-block">
-  <span className='menu_bar' onClick={sidebarShow}><FiMenu/></span>
+   <span className='menu_bar d-flex align-items-center' onClick={sidebarShow}><FiMenu className=''/></span>
 </div>
 
                             <div className="col-lg-2 col-md-2 col-4  px-md-2 d-none  d-lg-block d-md-none">
@@ -62,8 +63,8 @@ const Header = ( {sidebarShow}) => {
                             </div>
 
                             {/* 2 */}
-                            <div className="col-lg-2  col-md-3 col-4 ps-0 ">
-                                <div className="img_head ">
+                            <div className="col-lg-2   col-md-4 col-5 ps-0 ">
+                                <div className="img_head   d-flex algin-items-center justify-content-center ">
                                     <img src={logo} alt="" className="img-fluid " />
                                 </div>
                             </div>
@@ -73,7 +74,7 @@ const Header = ( {sidebarShow}) => {
                             {/* 4  */}
 
 
-                            <div className="  ms-auto col-lg-5 col-md-12  order-lg-0 order-md-5 input_item   pt-lg-0 order-5 mt-1 mt-lg-0 mt-md-0">
+                            <div className="  m  col-lg-5 col-md-11  order-lg-0 order-md-5 input_item   pt-lg-0 order-5 mt-1 mt-lg-0 mt-md-0">
 
                                 <div className="input-group from-outline ">
                                     <input type="text" className="form-control   border-1 " placeholder="Enter Your Keyword" />
@@ -127,7 +128,7 @@ const Header = ( {sidebarShow}) => {
                         </div>
 
                     </div>
-                </div>
+           
 
 
             </header>

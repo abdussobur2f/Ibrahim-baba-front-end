@@ -5,15 +5,29 @@ import axios from 'axios'
 import '../../styles/FlasDeals.scss/Flash.scss'
 import { NavLink } from 'react-router-dom'
 import {MdKeyboardArrowRight } from 'react-icons/md'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { VscHeart } from 'react-icons/vsc'
-import {BsEye} from 'react-icons/bs'
+ 
+import { FaHeart } from 'react-icons/fa'
+import ModalContent from '../../component/ProductDisplay/ModalContent'
+
 const Flash = () => {
   const [hour, setHour] = useState(0);
   const [minute, setMinute] = useState(0)
   const [second, setSecond] = useState(0);
 
   const [product,setProduct] =useState([])
+
+  const [love, setLove] = useState(false)
+
+  const [modalShow, setModalShow] = React.useState(false);
+
+
+  const show = () => {
+    setLove(!love)
+
+  }
+
+ 
 
     const SampleNextArrow = ({ onClick }) => {
 
@@ -104,7 +118,7 @@ const Flash = () => {
                   <div>
                   <div className="slider_item">
                     <div className="card h-100 border-0 rounded-0 p-0 m-0">
-                      <img className="card-img rounded-0" src={item.urls.regular} alt="Card image" />
+                      <img className="rounded-0" src={item.urls.regular} alt="Card" />
                       <div className="card-img-overlay text-center">
                         <h5 className="card-title text-white ">Flas Deals Just For You</h5>
                         <p className="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -127,7 +141,7 @@ const Flash = () => {
 {/* flash menu bar */}
 
           <section className='Flas__view_page  '>
-<div className="flash_container  px-2">
+<div className="flash_container px-0">
 
 
 <div className="flas_menu  ">
@@ -157,129 +171,112 @@ const Flash = () => {
                 {
                   product.slice().map((item) => {
                     return (
-                      <div className="col-6  px-2 mb-5">
-                        <NavLink to="/flash"  >
-                          <div className="card border-1  mb-4 rounded-0" key={item.id}>
-                            <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
+                      <div className="col-6 mt-3 mb-5 px-2">
 
-                            <div className="card-body ">
-                              <p className='card-title'>{item.alt_description.slice(0,25)}..</p>
-                              <div className="card-text">
-
-                                <div className="rating d-flex align-items-baseline justify-content-between">
-                                  <h5 className='lh-2'>${item.user.total_likes.toString().slice(0,2)}</h5>
-
-                                </div>
-                                <div className="price_product d-flex align-items-center gap-1 ">
-                                  <h4 className='mb-0 '>${item.likes}</h4>
-                                  <span> -{item.user.total_photos}%</span>
-                                </div>
-                              </div>
-                              <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
-                                <a >  <span><AiOutlineShoppingCart /></span></a>
-                                {/* <span><VscSync /></span> */}
-                                <span><VscHeart /></span>
-                       <span>< BsEye/></span>
-                              </div>
+                      <div className="card border-1  rounded-0" key={item.id}>
+                        <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
+    
+                        {/*  body contenrt start */}
+                        <div className="card-body ">
+                          <p className='card-title'>{item.alt_description.slice(0, 15)}....</p>
+                          <div className="card-text">
+    
+                            <div className="rating d-flex align-items-center justify-content-between">
+                              <h5 className='lh-2'>${item.user.total_likes.toString().slice(0, 2)}</h5>
+                              <h3> Point<span className='normal-font'>: 3.500</span></h3>
                             </div>
-
-            
-
-              <div className="cart__add  pt-1 w-100 text-center">
-                <div className="btn_Cart_add d-block w-100 ">Add To Cart</div>
-              </div>
-
-
+                            <div className="price_product d-flex align-items-center gap-1 ">
+                              <h4 className='mb-0 '>${item.likes}</h4>
+                              <span> -{item.user.total_photos}%</span>
+                            </div>
                           </div>
-                        </NavLink>
+                          <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
+                            <button onClick={() => setModalShow(true)}>Details</button>
+    
+    
+    
+    
+                          </div>
+                        </div>
+                        {/*  body contenrt end */}
+    
+    
+                        <div className="cart__add  w-100 text-center">
+                          <div className="btn_Cart_add d-block w-100 ">Add To Cart</div>
+                        </div>
+    
+                        <div className="whislist_icon" onClick={show}>
+    
+    
+    
+                          {
+                            love ? <FaHeart className='text-danger' /> : <VscHeart />
+                          }
+    
+                        </div>
+    
+    
                       </div>
+    
+                    </div>
                     )
                   })
                 }
                 {
-                  product.slice().map((item) => {
+                  product.slice().reverse().map((item) => {
                     return (
-                      <div className="col-6  px-2 mb-5">
-                        <NavLink to="/flash"  >
-                          <div className="card border-1  mb-4 rounded-0" key={item.id}>
-                            <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
+                      <div className="col-6 mt-3 mb-5 px-2">
 
-                            <div className="card-body ">
-                              <p className='card-title'>{item.alt_description.slice(0,25)}..</p>
-                              <div className="card-text">
-
-                                <div className="rating d-flex align-items-baseline justify-content-between">
-                                  <h5 className='lh-2'>${item.user.total_likes.toString().slice(0,2)}</h5>
-
-                                </div>
-                                <div className="price_product d-flex align-items-center gap-1 ">
-                                  <h4 className='mb-0 '>${item.likes}</h4>
-                                  <span> -{item.user.total_photos}%</span>
-                                </div>
-                              </div>
-                              <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
-                                <a >  <span><AiOutlineShoppingCart /></span></a>
-                                {/* <span><VscSync /></span> */}
-                                <span><VscHeart /></span>
-                       <span>< BsEye/></span>
-                              </div>
+                      <div className="card border-1  rounded-0" key={item.id}>
+                        <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
+    
+                        {/*  body contenrt start */}
+                        <div className="card-body ">
+                          <p className='card-title'>{item.alt_description.slice(0, 15)}....</p>
+                          <div className="card-text">
+    
+                            <div className="rating d-flex align-items-center justify-content-between">
+                              <h5 className='lh-2'>${item.user.total_likes.toString().slice(0, 2)}</h5>
+                              <h3> Point<span className='normal-font'>: 3.500</span></h3>
                             </div>
-
-            
-
-              <div className="cart__add  pt-1 w-100 text-center">
-                <div className="btn_Cart_add d-block w-100 ">Add To Cart</div>
-              </div>
-
-
+                            <div className="price_product d-flex align-items-center gap-1 ">
+                              <h4 className='mb-0 '>${item.likes}</h4>
+                              <span> -{item.user.total_photos}%</span>
+                            </div>
                           </div>
-                        </NavLink>
+                          <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
+                            <button onClick={() => setModalShow(true)}>Details</button>
+    
+    
+    
+    
+                          </div>
+                        </div>
+                        {/*  body contenrt end */}
+    
+    
+                        <div className="cart__add  w-100 text-center">
+                          <div className="btn_Cart_add d-block w-100 ">Add To Cart</div>
+                        </div>
+    
+                        <div className="whislist_icon" onClick={show}>
+    
+    
+    
+                          {
+                            love ? <FaHeart className='text-danger' /> : <VscHeart />
+                          }
+    
+                        </div>
+    
+    
                       </div>
+    
+                    </div>
                     )
                   })
                 }
-                {
-                  product.slice().map((item) => {
-                    return (
-                      <div className="col-6  px-2 mb-5">
-                        <NavLink to="/flash"  >
-                          <div className="card border-1  mb-4 rounded-0" key={item.id}>
-                            <img src={item.urls.regular} alt="" className="card-img-top img-fluid rounded-0" />
-
-                            <div className="card-body ">
-                              <p className='card-title'>{item.alt_description.slice(0,25)}..</p>
-                              <div className="card-text">
-
-                                <div className="rating d-flex align-items-baseline justify-content-between">
-                                  <h5 className='lh-2'>${item.user.total_likes.toString().slice(0,2)}</h5>
-
-                                </div>
-                                <div className="price_product d-flex align-items-center gap-1 ">
-                                  <h4 className='mb-0 '>${item.likes}</h4>
-                                  <span> -{item.user.total_photos}%</span>
-                                </div>
-                              </div>
-                              <div className="hover_card d-flex align-items-center  justify-content-center gap-4 mb-2 ">
-                                <a >  <span><AiOutlineShoppingCart /></span></a>
-                                {/* <span><VscSync /></span> */}
-                                <span><VscHeart /></span>
-                       <span>< BsEye/></span>
-                              </div>
-                            </div>
-
-            
-
-              <div className="cart__add  pt-1 w-100 text-center">
-                <div className="btn_Cart_add d-block w-100 ">Add To Cart</div>
-              </div>
-
-
-                          </div>
-                        </NavLink>
-                      </div>
-                    )
-                  })
-                }
+               
                 
               </div>
 
@@ -289,6 +286,19 @@ const Flash = () => {
 
 
           </section>
+
+          
+      <section className="popup">
+        <div>
+
+          <ModalContent
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          /> </div>
+      </section>
+
+
+
     </>
   )
 }

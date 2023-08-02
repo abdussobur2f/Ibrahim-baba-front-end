@@ -12,7 +12,6 @@ import CategoryAll from "../Category/CategoryAll"
 import LatestProduct from "../LatestProduct/LatestProduct"
 import SpecialOffer from "../SpecialOffer/SpecialOffer"
 import WhisList from "../WhisList/WhisList"
-import ModalContent from "../../component/ProductDisplay/ModalContent"
 import CheakOut from "../CheakOut/CheakOut"
  
 const Home = ({showMenu,hideMenu}) => {
@@ -44,7 +43,7 @@ const Home = ({showMenu,hideMenu}) => {
             <Route path='whislist' element={<WhisList />} />
            
            
-            <Route path='con' element={<ModalContent />} />
+             
             <Route path='cheakout' element={<CheakOut />} />
           
          
